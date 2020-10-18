@@ -46,3 +46,4 @@ Some notes on gentxs:
 1. Make sure you place the genesis file in the correct directory while running `certikd gentx`. Otherwise it will result in an invalid gentx.
 2. When you submit your gentx through a PR, make sure you include it in the correct directory without changing the file name.
 3. If your gentx is invalid, you will have to wait until mainnet goes live to be certified as validator post-genesis. 
+4. Most of the invalid gentxs from the validator testnet was due to wrong chain-id, or wrong parameters. Make sure you check your chain-id is shentu-1 in the genesis and you can start a single-node local chain with your gentx.
