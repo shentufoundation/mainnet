@@ -9,8 +9,8 @@ Please use v0.9-shentu binary for making gentx. https://github.com/certikfoundat
    ```
 1. Copy the initial genesis file to the `certikd` config directory (by default `~/.certikd/config/`).
     ```bash
-    rm ~/.certikd/config/genesis.json
-    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/config/genesis.json ~/.certikd/config/genesis.json
+    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/config/genesis.json .
+    mv genesis.json ~/.certikd/config/genesis.json
     ```
    
 2. Create a genesis account through the following command:
