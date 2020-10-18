@@ -1,5 +1,7 @@
 # CertiK Chain Shentu Mainnet genesis transaction submission guideline
 
+<b>The deadline to submit your gentx is 10/20/2020 13:00 EDT.</b>
+
 CertiK Chain is finally launching soon. If you participated in the validator program (Raise the Stakes), you can now submit your genesis transaction using the genesis file provided.
 Please use v0.9-shentu binary for making gentx. https://github.com/certikfoundation/shentu/releases/tag/v0.9-shentu
 
