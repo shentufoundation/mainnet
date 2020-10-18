@@ -6,14 +6,18 @@ CertiK Chain is finally launching soon. If you participated in the validator pro
    ```bash
    certikd init --chain-id shentu-1 <your_moniker> 
    ```
-1. First, copy your genesis file to the `certikd` config directory (by default `~/.certikd/config/`).
+1. Copy your genesis file to the `certikd` config directory (by default `~/.certikd/config/`).
+    ```bash
+    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/config/genesis.json ~/.certikd/config/genesis.json
+    ```
+   
 2. Create a genesis account through the following command:
     ```bash
-    certikd add-genesis-account <address or key name> 1000000uctk
+    certikd add-genesis-account <address or key name> 2000000uctk --manual --unlocker certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4 --vesting-amount=1000000uctk
    ```
    example:
    ```
-   certikd add-genesis-account mykey 1000000uctk
+   certikd add-genesis-account mykey 1000000uctk --manual --unlocker certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4 --vesting-amount=1000000uctk
     ```
    1. make sure the address/key matches the one you submit with KYC.
 3. Make a genesis transaction using the same address, using the following command:
