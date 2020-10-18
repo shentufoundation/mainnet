@@ -6,7 +6,7 @@ CertiK Chain is finally launching soon. If you participated in the validator pro
    ```bash
    certikd init --chain-id shentu-1 <your_moniker> 
    ```
-1. Copy your genesis file to the `certikd` config directory (by default `~/.certikd/config/`).
+1. Copy the initial genesis file to the `certikd` config directory (by default `~/.certikd/config/`).
     ```bash
     wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/config/genesis.json ~/.certikd/config/genesis.json
     ```
