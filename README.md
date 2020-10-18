@@ -1,6 +1,7 @@
 # CertiK Chain Shentu Mainnet genesis transaction submission guideline
 
 CertiK Chain is finally launching soon. If you participated in the validator program (Raise the Stakes), you can now submit your genesis transaction using the genesis file provided.
+Please use v0.9-shentu binary for making gentx. https://github.com/certikfoundation/shentu/releases/tag/v0.9-shentu
 
 1. If you do not have `certikd` initialized (haven't run a node before), run the following command to initialize `certikd` data/config directory.
    ```bash
