@@ -1,0 +1,225 @@
+{
+  "genesis_time": "2020-10-18T17:23:19.061039Z",
+  "chain_id": "shentu-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4",
+            "coins": [
+              {
+                "denom": "uctk",
+                "amount": "1000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        }
+      ]
+    },
+    "oracle": {
+      "operators": null,
+      "total_collateral": [],
+      "pool_params": {
+        "locked_in_blocks": "30",
+        "minimum_collateral": "50000"
+      },
+      "task_params": {
+        "task_expiration_duration": "86400000000000",
+        "task_aggregation_window": "20",
+        "task_aggregation_result": "50",
+        "task_threshold_score": "50",
+        "task_epsilon1": "1",
+        "task_epsilon2": "100"
+      },
+      "withdraws": null,
+      "tasks": null
+    },
+    "cvm": {
+      "gasrate": "1",
+      "contracts": null,
+      "metadata": null
+    },
+    "genutil": {
+      "gentxs": []
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_initial_deposit": [
+          {
+            "denom": "uctk",
+            "amount": "0"
+          }
+        ],
+        "min_deposit": [
+          {
+            "denom": "uctk",
+            "amount": "512000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "DefaultTally": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.500000000000000000",
+          "veto": "0.334000000000000000"
+        },
+        "CertifierUpdateSecurityVoteTally": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.667000000000000000",
+          "veto": "0.334000000000000000"
+        },
+        "CertifierUpdateStakeVoteTally": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.900000000000000000",
+          "veto": "0.334000000000000000"
+        }
+      }
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.070000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "uctk",
+        "inflation_rate_change": "0.100000000000000000",
+        "inflation_max": "0.140000000000000000",
+        "inflation_min": "0.040000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6307200"
+      }
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "uctk",
+        "amount": "1000"
+      }
+    },
+    "cert": {
+      "certifiers": null,
+      "validators": null,
+      "platforms": null,
+      "certificates": null,
+      "libraries": null
+    },
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.000000000000000000",
+        "slash_fraction_downtime": "0.000000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "supply": {
+      "supply": []
+    },
+    "params": null,
+    "distribution": {
+      "params": {
+        "community_tax": "0.000000000000000000",
+        "base_proposer_reward": "0.050000000000000000",
+        "bonus_proposer_reward": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "shield": {
+      "shield_admin": "",
+      "next_pool_id": "1",
+      "next_purchase_id": "1",
+      "pool_params": {
+        "protection_period": "1209600000000000",
+        "min_pool_life": "4838400000000000",
+        "shield_fees_rate": "0.010000000000000000",
+        "withdraw_period": "1814400000000000"
+      },
+      "claim_proposal_params": {
+        "claim_period": "1814400000000000",
+        "payout_period": "4838400000000000",
+        "min_deposit": [
+          {
+            "denom": "uctk",
+            "amount": "100000000"
+          }
+        ],
+        "deposit_rate": "0.100000000000000000",
+        "fees_rate": "0.010000000000000000"
+      },
+      "pools": null,
+      "collaterals": null,
+      "providers": null,
+      "purchases": null,
+      "withdraws": null
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1209600000000000",
+        "max_validators": 125,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "uctk"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "upgrade": {}
+  }
+}
