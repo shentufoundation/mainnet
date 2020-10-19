@@ -35,7 +35,7 @@ Please use v0.9-shentu binary for making gentx. https://github.com/certikfoundat
    ```
    example:
    ```go
-    --amount 900000uctk
+    --amount 1000000uctk
     --commission-rate 0.1
     --commission-max-rate 0.2
     --min-self-delegation 1
