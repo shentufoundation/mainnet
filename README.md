@@ -13,7 +13,7 @@
     Check if you have the correct genesis
     ```
     $ sha256sum ~/.certikd/config/genesis.json
-    0e58f79c67379e686644960afd4cd2642269ad62ae7a09b516f026b846dd5ad7  /home/ubuntu/.certikd/config/genesis.json
+    05ad504b28fba000a1d1aff736324c7be886e5aea166f5f2f07614ad76524cca  shentu-1/genesis.json
     ```
 2. Edit `config.toml` in the config directory to include the seeds
     ```
