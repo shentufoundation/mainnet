@@ -4,7 +4,7 @@
     1. https://github.com/certikfoundation/shentu/releases/tag/v1.0.0
 1. Download the final genesis
     ```bash
-    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/genesis.json .
+    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/shentu-1/genesis.json .
     ```
 1. Copy the final genesis file to your certikd config directory
     ```
