@@ -1,57 +1,35 @@
-# CertiK Chain Shentu Mainnet genesis transaction submission guideline
+## How to join Shentu Mainnet
 
-<b>The deadline to submit your gentx is 10/21/2020 13:00 EDT.</b>
+1. Download the final genesis
+    ```bash
+    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/genesis.json .
+    ```
+1. Copy the final genesis file to your certikd config directory
+    ```
+    $ cp genesis.json $HOME/.certikd/config/genesis.json
+    ```
+    Check if you have the correct genesis
+    ```
+    $ sha256sum ~/.certikd/config/genesis.json
+    90b9a79d4a795e1c8d343480a71578ad60253588  /home/ubuntu/.certikd/config/genesis.json
+    ```
+2. Edit `config.toml` in the config directory to include the seeds
+    ```
+    seeds = "<seed nodes above separated by comma>"
+    ```
+    example:
+    ```
+    seeds = "7d4a3761d0d725b5522ff00c926b95f36f481aaa@3.235.225.172:26656,e1820e5fd23e43d18be3e3e13a64b9383fb56a81@100.27.49.255:26656,b5ee0d27762dd1f1d4ea4b262b39ebd4ec02e5dc@34.236.38.150:26656,cf24fa8b46e01963f34c2ba885b4f70e2a88a857@3.236.253.202:26656,d70bd3f35a0c1c20e6a8fc57bc46c0ed02e7b381@3.236.144.53:26656"
+    ```
+3. <b>Reset certikd data through the following command:</b>
+    ```
+    $ certikd unsafe-reset-all
+    ```
+    Append `--home <certik_home>` <b>only if</b> your default home directory is NOT `~/.certikd`.
+4. Start certikd daemon.
+    ```
+    $ certikd start
+    ```
+    Append `--home <certik_home>` <b>only if</b> you default home directory is NOT `~/.certikd`.
 
-CertiK Chain is finally launching soon. If you participated in the validator program (Raise the Stakes), you can now submit your genesis transaction using the genesis file provided.
-Please use v0.9-shentu binary for making gentx. https://github.com/certikfoundation/shentu/releases/tag/v0.9-shentu
-
-1. If you do not have `certikd` initialized (haven't run a node before), run the following command to initialize `certikd` data/config directory.
-   ```bash
-   certikd init --chain-id shentu-1 <your_moniker> 
-   ```
-1. Copy the initial genesis file to the `certikd` config directory (by default `~/.certikd/config/`).
-    ```bash
-    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/config/genesis.json .
-    mv genesis.json ~/.certikd/config/genesis.json
-    ```
-   
-2. Create a genesis account through the following command:
-    ```bash
-    certikd add-genesis-account <address or key name> 2000000uctk --manual --unlocker certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4 --vesting-amount=1000000uctk
-   ```
-   example:
-   ```
-   certikd add-genesis-account mykey 1000000uctk --manual --unlocker certik1up7kaqxxvexgrpuxt6y2258qc3dkjdzvyp29v4 --vesting-amount=1000000uctk
-    ```
-   1. make sure the address/key matches the one you submit with KYC.
-3. Make a genesis transaction using the same address, using the following command:
-   ```bash
-    certikd gentx --amount <self_delegation_amount> \
-    --commission-rate <commission_rate> \
-    --commission-max-rate <max_rate> \
-    --commission-max-change-rate <max_change_rate> \
-    --min-self-delegation <self_delegation_parameter> \
-    --name <key_name>
-   ```
-   example:
-   ```go
-    --amount 1000000uctk
-    --commission-rate 0.1
-    --commission-max-rate 0.2
-    --min-self-delegation 1
-   ```
-   The above command will give your validator 10% commission rate and 20% max rate, with 0.9CTK delegated from your account.
-4. To test your gentx is valid, run the following command:
-    ```bash
-    certikd collect-gentxs
-    certikd start
-    ```
-   1. If your gentx is valid, it will start a single-node chain.
-5. Include your gentx file, located in `~/.certikd/config/gentx/gentx-<hash>.json` to gentx/ directory here, and make a pull request to `master` branch to be included in the mainnet final genesis. Please do <b>not</b> change the file name.
-    1. Tips on how to create a PR: https://opensource.com/article/19/7/create-pull-request-github
-    
-Some notes on gentxs:
-1. Make sure you place the genesis file in the correct directory while running `certikd gentx`. Otherwise it will result in an invalid gentx.
-2. When you submit your gentx through a PR, make sure you include it in the correct directory without changing the file name.
-3. If your gentx is invalid, you will have to wait until mainnet goes live to be certified as validator post-genesis. 
-4. Most of the invalid gentxs from the validator testnet was due to wrong chain-id, or wrong parameters. Make sure you check your chain-id is shentu-1 in the genesis and you can start a single-node local chain with your gentx.
+Note that the `genesis_time` in the genesis file is set to `October 24th 14:24 UTC`, which means the chain will not start until that time.
