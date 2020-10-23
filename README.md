@@ -1,5 +1,7 @@
 ## How to join Shentu Mainnet
 
+1. Download the latest binary release
+    1. https://github.com/certikfoundation/shentu/releases/tag/v1.0.0
 1. Download the final genesis
     ```bash
     wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/genesis.json .
@@ -11,7 +13,7 @@
     Check if you have the correct genesis
     ```
     $ sha256sum ~/.certikd/config/genesis.json
-    90b9a79d4a795e1c8d343480a71578ad60253588  /home/ubuntu/.certikd/config/genesis.json
+    0e58f79c67379e686644960afd4cd2642269ad62ae7a09b516f026b846dd5ad7  /home/ubuntu/.certikd/config/genesis.json
     ```
 2. Edit `config.toml` in the config directory to include the seeds
     ```
@@ -19,7 +21,7 @@
     ```
     example:
     ```
-    seeds = "7d4a3761d0d725b5522ff00c926b95f36f481aaa@3.235.225.172:26656,e1820e5fd23e43d18be3e3e13a64b9383fb56a81@100.27.49.255:26656,b5ee0d27762dd1f1d4ea4b262b39ebd4ec02e5dc@34.236.38.150:26656,cf24fa8b46e01963f34c2ba885b4f70e2a88a857@3.236.253.202:26656,d70bd3f35a0c1c20e6a8fc57bc46c0ed02e7b381@3.236.144.53:26656"
+    seeds = "fb6c1ac01ff8f936eb44e1cae776485371a1f13d@54.82.98.158:26656,b9aa84401f6d6d6d1693b23a60923fe3744ba007@35.153.208.110:26656,ca403870dafd302fb3bfae59946c41c3afdf43c1@3.238.76.49:26656,e19e98be21c63349b0e7249c586236f68efc1467@54.164.253.191:26656,ea4f586396ace26bd5c2c0222073d98b5b196bab@3.238.96.73:26656"
     ```
 3. <b>Reset certikd data through the following command:</b>
     ```
