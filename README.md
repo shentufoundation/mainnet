@@ -34,4 +34,10 @@
     ```
     Append `--home <certik_home>` <b>only if</b> you default home directory is NOT `~/.certikd`.
 
-Note that the `genesis_time` in the genesis file is set to `October 24th 14:24 UTC`, which means the chain will not start until that time.
+<b>
+Notes for the node operator (including validators):
+
+1. Make sure you have the correct priv_validator_key.json file in the config directory. It should be the one that you had in the config/ directory where you made your gentx. Otherwise the chain will not recognize you as a validator.
+
+1. Note that the `genesis_time` in the genesis file is set to `October 24th 14:24 UTC`, which means the chain will not start until that time.
+</b>
