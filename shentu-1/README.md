@@ -47,4 +47,4 @@ Notes for the node operator (including validators):
 1. Download v1.1.0 binary release
     1. https://github.com/certikfoundation/shentu/releases/tag/v1.1.0
 2. Before height 348000, kill certikd process, and restart (NOT history reset) with the new binary.
-3. Note you have to start syncing with v1.0.0 binary, due to app hash difference when loading the genesis.
+3. Note you have to start syncing from genesis with v1.0.0 binary, due to app hash difference when loading the genesis.
