@@ -40,11 +40,13 @@ Notes for the node operator (including validators):
 1. Make sure you have the correct priv_validator_key.json file in the config directory. It should be the one that you had in the config/ directory where you made your gentx. Otherwise the chain will not recognize you as a validator.
 
 1. Note that the `genesis_time` in the genesis file is set to `October 24th 14:24 UTC`, which means the chain will not start until that time.
+
+1. You MUST upgrade to v1.3.0 before height 348000. The node will break otherwise.
 </b>
 
 ## After syncing
 
-1. Download v1.1.0 binary release
-    1. https://github.com/certikfoundation/shentu/releases/tag/v1.1.0
+1. Download v1.3.0 binary release
+    1. https://github.com/certikfoundation/shentu/releases/tag/v1.3.0
 2. Before height 348000, kill certikd process, and restart (NOT history reset) with the new binary.
 3. Note you have to start syncing from genesis with v1.0.0 binary, due to app hash difference when loading the genesis.
