@@ -44,9 +44,9 @@ Notes for the node operator (including validators):
 1. You MUST upgrade to v1.3.0 before height 348000. The node will break otherwise.
 </b>
 
-## After syncing
+## After starting to sync
 
-1. Download v1.3.0 binary release
-    1. https://github.com/certikfoundation/shentu/releases/tag/v1.3.0
+1. Download v1.3.1 binary release
+    1. https://github.com/certikfoundation/shentu/releases/tag/v1.3.1
 2. Before height 348000, kill certikd process, and restart (NOT history reset) with the new binary.
-3. Note you have to start syncing from genesis with v1.0.0 binary, due to app hash difference when loading the genesis.
+3. Note you have to start syncing from genesis with v1.0.0 binary.
