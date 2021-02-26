@@ -12,7 +12,7 @@ Certified TIA-942 Tier 3 or higher
 
 (Optional - create directory) 
 	
-    	mkdir Certik
+	mkdir Certik
 	cd Certik
  
 Download the v1.0.0 binary release.
@@ -27,19 +27,19 @@ Initialize Certikd - run it, should show you the help but also create the .certi
 
 Download the final genesis.
 	
-    	wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/shentu-1/genesis.json
+	wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/shentu-1/genesis.json
 
 Copy the final genesis file to your certikd config directory.
 	
-    	cp genesis.json $HOME/.certikd/config/genesis.json
+	cp genesis.json $HOME/.certikd/config/genesis.json
 
 Check if you have the correct genesis.
 	
-    	sha256sum ~/.certikd/config/genesis.json
+	sha256sum ~/.certikd/config/genesis.json
 
 Output should be:	
 	
-    	05ad504b28fba000a1d1aff736324c7be886e5aea166f5f2f07614ad76524cca  shentu-1/genesis.json
+	05ad504b28fba000a1d1aff736324c7be886e5aea166f5f2f07614ad76524cca  shentu-1/genesis.json
  
 Edit config.toml in the config directory to include the seeds.<br />
 seeds = "<seed nodes above separated by comma>" (I use vi, but feel free to use other editors)
@@ -79,14 +79,14 @@ For example:
 Update them to correct permissions - change command to correct version. <br />
 For example:
 	
-    	chmod +x certikd_1.3.1.0205_linux_amd64
+	chmod +x certikd_1.3.1.0205_linux_amd64
 	chmod +x certikcli_1.3.1.0205_linux_amd64
 	
 Implement the certikcli / certikd as binaries so we can just use certikcli and certikd. <br />
 For example:
 
 	sudo cp certikd_1.3.1.0205_linux_amd64 /bin/certikd
-    	sudo cp certikcli_1.3.1.0205_linux_amd64 /bin/certikcli
+	sudo cp certikcli_1.3.1.0205_linux_amd64 /bin/certikcli
 	
 Perform a quick sync. (https://www.notion.so/Stake-Systems-Fast-Sync-Service-5cb0dffb78174d3494b93f87d242939d) - password on site
 
@@ -123,7 +123,7 @@ As an extra you can run certikd as a service.
 	
 Add following to the file, make sure to change ubuntu to the correct user.
 	
-    	[Unit]
+	[Unit]
 	Description=CertiK Daemon
 	After=network-online.target
 	[Service]
