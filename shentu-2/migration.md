@@ -123,9 +123,9 @@ shentu v1.4.0 with v0.39.1 of the _Cosmos SDK_ and restore to their latest snaps
 
 ## Upgrade Procedure
 
-__Note__: It is assumed you are currently operating a full-node running gaia v2.0.15 with v0.37.15 of the _Cosmos SDK_.
+__Note__: It is assumed you are currently operating a full-node running certik v1.4.0 with v0.39.1 of the _Cosmos SDK_.
 
-The version/commit hash of Gaia v2.0.15: `89cf7e6fc166eaabf47ad2755c443d455feda02e`
+The version/commit hash of certik v1.4.0: `331ac5bffc0f8bc3769ff7125f51b871cce58721`
 
 1. Verify you are currently running the correct version (v1.4.0) of _certikd_:
 
@@ -164,7 +164,7 @@ The version/commit hash of Gaia v2.0.15: `89cf7e6fc166eaabf47ad2755c443d455feda0
    Since we know the last block generated in shentu-1, we now export the state.
 
    ```bash
-   $ gaiad export --height=<height TBD> > shentu-1-genesis-exported.json
+   $ certikd export --height=<height TBD> > shentu-1-genesis-exported.json
    ```
    _this might take a while, you can expect up to 30 minutes for this step_
 
@@ -277,7 +277,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
    The shentu-2 genesis file will be validated by community participants, and
    the hash of the file will be shared on the #validators-verified channel of the [Cosmos Discord](https://discord.gg/vcExX9T).
 
-1. Install v4.0.2 of [Gaia](https://github.com/cosmos/gaia).
+1. Install v2.x.x of [certik](https://github.com/certikfoundation/shentu).
 
    **NOTE**: Go [1.15+](https://golang.org/dl/) is required!
 
@@ -285,7 +285,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
    $ git clone https://github.com/certikfoundation/shentu.git && cd shentu && git checkout v2.x.x; make install
    ```
 
-1. Verify you are currently running the correct version (v2.x.x) of the _Gaia_:
+1. Verify you are currently running the correct version (v2.x.x) of the _certik_:
 
    ```bash
     name: certik
@@ -296,7 +296,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     ...
    ```
    
-   The version/commit hash of Gaia v2.x.x: `dummyshasum6d46572f3273423ad9562cf249a86ecc8206e207`
+   The version/commit hash of certik v2.x.x: `dummyshasum6d46572f3273423ad9562cf249a86ecc8206e207`
 
 1. Reset state:
 
@@ -307,7 +307,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
    $ certikd unsafe-reset-all
    ```
 
-1. Move the new `genesis.json` to your `.gaia/config/` directory
+1. Move the new `genesis.json` to your `.certik/config/` directory
 
     ```bash
     cp genesis.json ~/.certik/config/
@@ -353,7 +353,7 @@ address = "0.0.0.0:9090"
 
 # State Sync
 
-State Sync Configuration in your `.gaia/config/app.toml`
+State Sync Configuration in your `.certik/config/app.toml`
 
 ```yaml
 # State sync snapshots allow other nodes to rapidly join the network without replaying historical
