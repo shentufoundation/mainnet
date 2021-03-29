@@ -93,8 +93,7 @@ applications gain in speed, readability, convinience and interoperability with m
 [Read more](https://github.com/cosmos/cosmos-sdk/blob/master/docs/migrations/app_and_modules.md#protocol-buffers)
 - **CLI**: The CLI and the daemon for a blockchain were seperated in previous versions of the Cosmos SDK. This 
 led to a `certikd` and `certikcli` binary which were seperated and could be used for different interactions with the
-blockchain. Both of these have been merged into one `certikd` which now supports the commands the `certikcli` previously
-supported.
+blockchain. Both of these have been merged into one binary named `certik`.
 - **Node Configuration**: Previously blockchain data and node configuration was stored in `~/.certikd/`, these will
 now reside in `~/.certik/`, if you use scripts that make use of the configuration or blockchain data, make sure to update the path.
 
