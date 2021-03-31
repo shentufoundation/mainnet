@@ -40,7 +40,7 @@ The network upgrade can take the following potential pathways:
 1. Happy path: Validator successfully migrates the shentu-1 genesis file to a shentu-2 genesis file, and the validator can successfully start CertiK v2 with the shentu-2 genesis within 1-2 hours of the scheduled upgrade.
 1. Not-so-happy path: Validators have trouble migrating the shentu-1 genesis to a shentu-2 genesis, but can obtain the genesis file from the Cosmos mainnet github repo and can successfully start Shentu v2 within 1-2 hours of the scheduled upgrade.  
 1. Abort path: In the rare event that the team becomes aware of critical issues, which result in an unsuccessful migration within a few hours, the upgrade will be announced as aborted 
-   on the #validators-verified channel of [Discord](https://discord.gg/GMrQ9znehh), and validators will need to resume running shentu-1 network without any updates or changes. 
+   on the #shentu-mainnet channel of [Discord](https://discord.gg/GMrQ9znehh), and validators will need to resume running shentu-1 network without any updates or changes. 
    A new governance proposal for the upgrade will need to be issued and voted on by the community.
 
 # Migrations
