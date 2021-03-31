@@ -34,7 +34,7 @@ The following is a short summary of the upgrade steps:
 Specific instructions for validators are available in [Upgrade Procedure](#upgrade-procedure), 
 and specific instructions for full node operators are available in [Guidance for Full Node Operators](#guidance-for-full-node-operators).
 
-Upgrade coordination and support for validators will be available on the #validators-verified channel of the [Cosmos Discord](https://discord.gg/vcExX9T).
+Upgrade coordination and support for validators will be available on the #validators-verified channel of the [CertiK Discord](https://discord.gg/GMrQ9znehh).
 
 The network upgrade can take the following potential pathways:
 1. Happy path: Validator successfully migrates the shentu-1 genesis file to a shentu-2 genesis file, and the validator can successfully start CertiK v2 with the shentu-2 genesis within 1-2 hours of the scheduled upgrade.
