@@ -3,12 +3,10 @@
 First of all, there are a few general notes to keep in mind for this upgrade:
 
 - To enable REST API endpoints, set `enable = true` and `swagger = true` in the file `~/.certik/config/app.toml` before starting the chain. 
-
 - Returned JSONs omit keys when their values are empty.
+- GRPC endpoints have been added.
+- `POST` endpoints used for generating unsigned transactions have been deprecated. Please take a look at [Cosmos guide](https://github.com/cosmos/cosmos-sdk/blob/master/docs/run-node/txs.md) on generating, signing, and broadcasting transactions.  
 
-- GRPC endpoints have been added (See Migrating to GRPC Endpoints).
-
-  
 
 The original set of REST endpoints are now called *legacy REST endpoints*, but they have been kept mostly intact in this upgrade. The following table summarizes breaking changes in these endpoints.
 
