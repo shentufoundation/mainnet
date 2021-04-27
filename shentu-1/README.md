@@ -1,6 +1,6 @@
 ## How to join Shentu Mainnet
 
-1. Download the latest binary release
+1. Download the v1.0.0 binary release
     1. https://github.com/certikfoundation/shentu/releases/tag/v1.0.0
 1. Download the final genesis
     ```bash
