@@ -10,7 +10,7 @@ Latest network is [shentu-1](https://github.com/certikfoundation/mainnet/tree/ma
 
 [Telegram](https://t.me/certikfoundation)
 
-[Discord](https://discord.gg/SQjPVnSj)
+[Discord](https://discord.gg/Q5a68GCY9Z)
 
 [Twitter](https://twitter.com/certikorg)
 
