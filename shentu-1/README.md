@@ -3,7 +3,7 @@
 ## Recommended system setup
 
 Certified TIA-942 Tier 3 or higher
-- 4 CPU
+- 4 physical core CPU
 - Memory: 8GB
 - Disk: 256GB+ 
 - Ubuntu 18.04 +
