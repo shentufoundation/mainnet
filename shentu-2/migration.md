@@ -45,10 +45,11 @@ The network upgrade can take the following potential pathways:
 
 # Migrations
 
-These chapters contains all the migration guides to update your app and modules to Cosmos v0.40 Stargate.
+These chapters contains all the migration guides to update your app and modules to Cosmos v0.42 Stargate.
 
-If you’re running a block explorer, wallet, exchange, validator, or any other service (eg. custody provider) that depends upon the Cosmos Hub or Cosmos ecosystem, you’ll want to pay attention, because this upgrade will involve substantial changes.
+If you’re running a block explorer, wallet, exchange, validator, or any other service (eg. custody provider) that depends upon the CertiK Chain, you’ll want to pay attention, because this upgrade will involve substantial changes.
 
+For some resources that is similar with Cosmos Hub upgrade:
 1. [App and Modules Migration](https://github.com/cosmos/cosmos-sdk/blob/master/docs/migrations/app_and_modules.md)
 1. [Chain Upgrade Guide to v0.40](https://github.com/cosmos/cosmos-sdk/blob/master/docs/migrations/chain-upgrade-guide-040.md)
 1. [REST Endpoints Migration](https://github.com/cosmos/cosmos-sdk/blob/master/docs/migrations/rest.md)
@@ -205,7 +206,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
    $ certik migrate shentu-1-genesis-exported.json --chain-id=shentu-2 --initial-height 0 > genesis.json
    ```
 
-   This will migrate our exported state into the required `genesis.json` file to start the shentu-2.
+   This will migrate our exported state into the required `genesis.json` file to start the node in shentu-2.
 
 1. Verify the SHA256 of the final genesis JSON:
 
@@ -238,7 +239,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     certik start
     ```
 
-    Automated audits of the genesis state can take a few minutes using the crisis module. This can be disabled by 
+    Automated audits of the genesis state can take a few seconds using the crisis module. This can be disabled by 
     `certik start --x-crisis-skip-assert-invariants`.
 
 # Guidance for Full Node Operators
@@ -264,7 +265,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
    mv ~/.certikd ./certikd_backup
    ```
 
-   **NOTE**: It is recommended for validators and operators to take a full data snapshot at the export
+   **NOTE**: It is recommended for validators and node operators to take a full data snapshot at the export
    height before proceeding in case the upgrade does not go as planned or if not enough voting power
    comes online in a sufficient and agreed upon amount of time. That means the backup of `.certikd` should 
    only take place once the chain has halted at height `height TBD`.
