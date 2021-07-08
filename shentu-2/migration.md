@@ -59,6 +59,7 @@ For some resources that is similar with Cosmos Hub upgrade:
 1. [State Sync – minutes to sync new nodes](https://figment.network/resources/cosmos-stargate-upgrade-overview/#sync)
 1. [Full-Featured Light Clients](https://figment.network/resources/cosmos-stargate-upgrade-overview/#light)
 1. [Chain Upgrade Module – upgrade automation](https://figment.network/resources/cosmos-stargate-upgrade-overview/#upgrade)
+1. [Keyring Migration Guide](https://docs.cosmos.network/master/migrations/keyring.html)
 
 If you want to test the procedure before the update happens on `TBD`, please see this post accordingly:
 
