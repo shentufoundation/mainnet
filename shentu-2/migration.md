@@ -28,8 +28,8 @@ The following is a short summary of the upgrade steps:
     1. Backing up configs, data, and keys used for running shentu-1
     1. Resetting state to clear the local shentu-1 state
     1. Copying the shentu-2 genesis file to the CertiK config folder (either after migrating an existing shentu-1 genesis export, or downloading the shentu-2 genesis from the mainnet github)
-    1. Installing the CertiK v2.x.x release
-    1. Starting the CertiK v2.x.x instance to resume the Shentu chain at a height 0.
+    1. Installing the CertiK v2.0.0 release
+    1. Starting the CertiK v2.0.0 instance to resume the Shentu chain at a height 0.
 
 Specific instructions for validators are available in [Upgrade Procedure](#upgrade-procedure), 
 and specific instructions for full node operators are available in [Guidance for Full Node Operators](#guidance-for-full-node-operators).
@@ -38,7 +38,7 @@ Upgrade coordination and support for validators will be available on the #valida
 
 The network upgrade can take the following potential pathways:
 1. Happy path: Validator successfully migrates the shentu-1 genesis file to a shentu-2 genesis file, and the validator can successfully start CertiK v2 with the shentu-2 genesis within 1-2 hours of the scheduled upgrade.
-1. Not-so-happy path: Validators have trouble migrating the shentu-1 genesis to a shentu-2 genesis, but can obtain the genesis file from the Cosmos mainnet github repo and can successfully start Shentu v2 within 1-2 hours of the scheduled upgrade.  
+1. Not-so-happy path: Validators have trouble migrating the shentu-1 genesis to a shentu-2 genesis, but can obtain the genesis file from the Cosmos mainnet github repo and can successfully start Shentu v2 within 1-2 hours of the scheduled upgrade.
 1. Abort path: In the rare event that the team becomes aware of critical issues, which result in an unsuccessful migration within a few hours, the upgrade will be announced as aborted 
    on the #shentu-mainnet channel of [Discord](https://discord.gg/GMrQ9znehh), and validators will need to resume running shentu-1 network without any updates or changes. 
    A new governance proposal for the upgrade will need to be issued and voted on by the community.
@@ -75,7 +75,7 @@ the [Interchain Standads](https://github.com/cosmos/ics#ibc-quick-references) wi
 This upgrade comes with several improvements in efficiency, node synchronization and following blockchain upgrades.
 More details on the [Stargate Website](https://stargate.cosmos.network/).
 
-__[Shentu](https://github.com/certikfoundation/shentu) application v2.x.x is
+__[Shentu](https://github.com/certikfoundation/shentu) application v2.0.0 is
 what full node operators will upgrade to and run in this next major upgrade__.
 Following Cosmos SDK version v0.xx.xx and Tendermint v0.xx.x.
 
@@ -122,7 +122,7 @@ It is critically important to back-up the `.certikd/data/priv_validator_state.js
 In the event that the upgrade does not succeed, validators and operators must downgrade back to
 shentu v1.4.0 with v0.39.1 of the _Cosmos SDK_ and restore to their latest snapshot before restarting their nodes.
 
-## Upgrade Procedure
+## Upgrade Procedure (Without Pre-processed Genesis file)
 
 __Note__: It is assumed you are currently operating a full-node running certik v1.4.0 with v0.39.1 of the _Cosmos SDK_.
 
@@ -180,28 +180,28 @@ The version/commit hash of certik v1.4.0: `331ac5bffc0f8bc3769ff7125f51b871cce58
    ```
 
 1. At this point you now have a valid exported genesis state! All further steps now require
-v2.x.x of [certik](https://github.com/certikfoundation/shentu) binary. 
+v2.0.0 of [certik](https://github.com/certikfoundation/shentu) binary. 
 Cross check your genesis hash with other peers (other validators) in the chat rooms.
 
    **NOTE**: Go [1.15+](https://golang.org/dl/) is required!
 
    ```bash
-   $ git clone https://github.com/certikfoundation/shentu.git && cd shentu && git checkout v2.x.x; make install
+   $ git clone https://github.com/certikfoundation/shentu.git && cd shentu && git checkout v2.0.0; make install
    ```
 
-1. Verify you are currently running the correct version (v2.x.x) of the _CertiK_:
+1. Verify you are currently running the correct version (v2.0.0) of the _CertiK_:
 
    ```bash
     name: certik
-    server_name: certikd
-    version: 2.x.x
-    commit: dummyshasum6d46572f3273423ad9562cf249a86ecc8206e207
+    server_name: certik
+    version: 2.0.0
+    commit: f05c6c69effa400abf1e9143f0a094fd0a60809e
     build_tags: netgo,ledger
     ...
    ```
-    The version/commit hash of CertIK v2.x.x: `dummyshasum6d46572f3273423ad9562cf249a86ecc8206e207`
+    The version/commit hash of CertIK v2.0.0: `f05c6c69effa400abf1e9143f0a094fd0a60809e`
 
-1. Migrate exported state from the current v1.4.0 version to the new v2.x.x version <b>WITH THE v2.x.x BINARY</b>:
+1. Migrate exported state from the current v1.4.0 version to the new v2.0.0 version <b>WITH THE v2.0.0 BINARY</b>:
 
    ```bash
    $ certik migrate shentu-1-genesis-exported.json --chain-id=shentu-2 --initial-height 0 > genesis.json
@@ -243,7 +243,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     Automated audits of the genesis state can take a few seconds using the crisis module. This can be disabled by 
     `certik start --x-crisis-skip-assert-invariants`.
 
-# Guidance for Full Node Operators
+# Upgrade Procedure \#2 (With Pre-processed Genesis file)
 
 1. Verify you are currently running the correct version (v1.4.0) of _certikd_:
 
@@ -276,28 +276,29 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
 1. Download the shentu-2 genesis file from the [Shentu Mainnet Github](https://github.com/shentu/mainnet).
    This file will be generated by a validator that is migrating from shentu-1 to shentu-2.
    The shentu-2 genesis file will be validated by community participants, and
-   the hash of the file will be shared on the #validators-verified channel of the [Cosmos Discord](https://discord.gg/vcExX9T).
+   the hash of the file will be shared on the #shentu-mainnet channel of the [CertiK Discord](https://discord.gg/GMrQ9znehh).
 
-1. Install v2.x.x of [certik](https://github.com/certikfoundation/shentu).
+1. Install v2.0.0 of [certik](https://github.com/certikfoundation/shentu).
 
    **NOTE**: Go [1.15+](https://golang.org/dl/) is required!
 
    ```bash
-   $ git clone https://github.com/certikfoundation/shentu.git && cd shentu && git checkout v2.x.x; make install
+   $ git clone https://github.com/certikfoundation/shentu.git && cd shentu && git checkout v2.0.0; make install
    ```
 
-1. Verify you are currently running the correct version (v2.x.x) of the _certik_:
+1. Verify you are currently running the correct version (v2.0.0) of the _certik_:
 
    ```bash
+   $ certik version --long
     name: certik
-    server_name: certikd
-    version: 2.x.x
-    commit: dummyshasum6d46572f3273423ad9562cf249a86ecc8206e207
+    server_name: certik
+    version: 2.0.0
+    commit: f05c6c69effa400abf1e9143f0a094fd0a60809e
     build_tags: netgo,ledger
     ...
    ```
    
-   The version/commit hash of certik v2.x.x: `dummyshasum6d46572f3273423ad9562cf249a86ecc8206e207`
+   The version/commit hash of certik v2.0.0: `f05c6c69effa400abf1e9143f0a094fd0a60809e`
 
 1. Reset state:
 
