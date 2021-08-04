@@ -12,7 +12,7 @@ Certified TIA-942 Tier 3 or higher
 
 For validators or node runners looking to upgrade their node from shentu-1 to shentu-2, visit [CertiK Chain Shentu-2 Migration Guidelines](https://github.com/certikfoundation/mainnet/blob/main/shentu-2/migration.md).
 
-## Setup Guidelines POST Shentu-2 LAUNCH
+## Setup Guidelines POST Shentu-2 LAUNCH (ETA Aug/31/2021)
 
 (Optional - create directory)
 
