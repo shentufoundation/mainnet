@@ -23,7 +23,7 @@ Download the v2.0.0 binary release.
 https://github.com/certikfoundation/shentu/releases/tag/v2.0.0
 
 For Linux:
-	wget https://github.com/certikfoundation/shentu/releases/download/v2.0.0/certik_2.0.0.0804_linux_amd64
+	wget https://github.com/certikfoundation/shentu/releases/download/v2.0.0/certik_2.0.0.0809_linux_amd64
 	chmod +x ./certik
 
 Initialize certik daemon - run it, should show you the help but also create the .certik in your home dir.
@@ -78,7 +78,7 @@ Let it run for a minute and then kill it.
 Go to the latest version on github and download the certik binary. (https://github.com/certikfoundation/shentu/releases) <br />
 For example:
 
-	wget https://github.com/certikfoundation/shentu/releases/download/v2.0.0/certik_2.0.0.0804_linux_amd64
+	wget https://github.com/certikfoundation/shentu/releases/download/v2.0.0/certik_2.0.0.0809_linux_amd64
 
 Update them to correct permissions - change command to correct version. <br />
 For example:
@@ -88,7 +88,7 @@ For example:
 Implement the certik as binaries so we can just access it through `certik`. <br />
 For example:
 
-	sudo cp certik_2.0.0.0804_linux_amd64 /bin/certik
+	sudo cp certik_2.0.0.0809_linux_amd64 /bin/certik
 
 Start certik and continue the sync. It could be that you get a lot of errors in the start but it should start picking up other.
 
