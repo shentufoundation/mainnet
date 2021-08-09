@@ -219,19 +219,44 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     Compare this value with other validators / full node operators of the network. 
     It is important that each party can reproduce the same genesis.json file from the steps accordingly.
 
-1. Reset state:
+1. Initialize new `cerik` directory:
 
-   **NOTE**: Be sure you have a complete backed up state of your node before proceeding with this step.
-   See [Recovery](#recovery) for details on how to proceed.
+    First we want to  initialize the config and data directories <b>using the new binary</b>:
+    ```bash
+    $ certik init <moniker> --chain-id yulei-2
+    ```
+    
+    Then, copy over the existing validator keys and node keys over to the new directory.
+    
+    ```bash
+    $ cp ~/.certikd/config/priv_validator_key.json ~/.certik/config/
+    $ cp ~/.certikd/config/node_key.json ~/.certik/config/
+    ```
+
+1. (Optional) Reset old chain data:
+
+   **NOTE**: You will lose all your old chain data if you run this step.
 
    ```bash
    $ certikd unsafe-reset-all
    ```
 
-1. Move the new `genesis.json` to your `.certik/config/` directory
+1. Supply new chain data into the new chain directory:
+    
+    Move the new `genesis.json` to your `.certik/config/` directory
 
     ```bash
     cp genesis.json ~/.certik/config/
+    ```
+    
+    Modify `config.toml` to provide some seed nodes or persistent peers
+    
+    ```bash
+    # Comma separated list of seed nodes to connect to
+    seeds = "<node_id@addr:port,...>"
+ 
+    # Comma separated list of nodes to keep persistent connections to
+    persistent_peers = "<node_id@addr:port,...>"
     ```
 
 1. Start your blockchain 
