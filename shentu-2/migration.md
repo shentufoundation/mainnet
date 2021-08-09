@@ -195,11 +195,11 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     name: certik
     server_name: certik
     version: 2.0.0
-    commit: d616107ef56725c17c710eba41342118ca1b6e1b
+    commit: f4e304d4cd904a5be789e12b12a969582a9c9ccd
     build_tags: netgo,ledger
     ...
    ```
-    The version/commit hash of CertIK v2.0.0: `d616107ef56725c17c710eba41342118ca1b6e1b`
+    The version/commit hash of CertIK v2.0.0: `f4e304d4cd904a5be789e12b12a969582a9c9ccd`
 
 1. Migrate exported state from the current v1.4.0 version to the new v2.0.0 version <b>WITH THE v2.0.0 BINARY</b>:
 
@@ -223,7 +223,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
 
     First we want to  initialize the config and data directories <b>using the new binary</b>:
     ```bash
-    $ certik init <moniker> --chain-id yulei-2
+    $ certik init <moniker> --chain-id shentu-2
     ```
     
     Then, copy over the existing validator keys and node keys over to the new directory.
@@ -318,12 +318,12 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
     name: certik
     server_name: certik
     version: 2.0.0
-    commit: d616107ef56725c17c710eba41342118ca1b6e1b
+    commit: f4e304d4cd904a5be789e12b12a969582a9c9ccd
     build_tags: netgo,ledger
     ...
    ```
    
-   The version/commit hash of certik v2.0.0: `d616107ef56725c17c710eba41342118ca1b6e1b`
+   The version/commit hash of certik v2.0.0: `f4e304d4cd904a5be789e12b12a969582a9c9ccd`
 
 1. Reset state:
 
