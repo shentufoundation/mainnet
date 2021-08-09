@@ -51,11 +51,11 @@ seeds = "<seed nodes above separated by comma>" (I use vi, but feel free to use 
 
 	vi ~/.certik/config/config.toml
 
-Add the seeds from : https://github.com/certikfoundation/mainnet/blob/main/shentu-2/seeds.txt <br />
+Add the seeds from the [seed list](https://github.com/certikfoundation/mainnet/blob/main/shentu-2/seeds.txt) to .certik/config/config.toml. <br />
 Currently this would result into:
 
 ```
-seeds = ""
+seeds = "41e0c490d87266f7c9e78b0e9b0adafd8d06fca5@3.236.161.42:26656,8eb0e830eb7d166a919747c2b9e0d46fe1447802@54.236.61.32:26656,e4f9776fdf1b37bba6d0400092952666820991c7@3.227.241.190:26656"
 ```
 
 Go back to your original directory with the binaries:
