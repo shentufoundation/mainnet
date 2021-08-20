@@ -5,7 +5,7 @@
 Certified TIA-942 Tier 3 or higher
 - 4 physical core CPU
 - Memory: 8GB
-- Disk: 256GB+ 
+- Disk: 500GB+ 
 - Ubuntu 18.04 +
 
 ## Setup Guidelines
