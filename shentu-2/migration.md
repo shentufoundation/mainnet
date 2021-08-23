@@ -21,7 +21,12 @@ This indicates that the upgrade procedure should be performed on `Aug 31st 2021`
  
 # Summary
 
-The shentu-1 will undergo a scheduled upgrade to shentu-2 on `Aug 31st 2021`.
+The shentu-1 will undergo a scheduled upgrade at block `4313500`, which corresponds approximately to `Tuesday Aug 31, 2021 at 15:00 UTC` at the current block time (~5.4s/block). Note that the proposed date/time is approximate as blocks are not generated at a constant interval.
+
+- West Coast USA: `7:00 on Aug 31`
+- East Coast USA: `10:00 on Aug 31`
+- Central Europe: `17:00 on Aug 31`
+- Seoul: `00:00 on Sep 1`
 
 The following is a short summary of the upgrade steps:
     1. Stopping the running CertiK v1.4.x instance 
