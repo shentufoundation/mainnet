@@ -7,7 +7,7 @@ execute the following instructions in order to verify the resulting genesis file
 
 There is a strong social consensus around proposal `Shentu 2 Upgrade Proposal`
 on `shentu-1`. Following proposals `PROPOSAL LINKS TBA`.
-This indicates that the upgrade procedure should be performed on `<DATE TBD>`.
+This indicates that the upgrade procedure should be performed on `Aug 31st 2021`.
 
   - [Summary](#summary)
   - [Migrations](#migrations)
@@ -21,7 +21,7 @@ This indicates that the upgrade procedure should be performed on `<DATE TBD>`.
  
 # Summary
 
-The shentu-1 will undergo a scheduled upgrade to shentu-2 on `<DATE TBD>`.
+The shentu-1 will undergo a scheduled upgrade to shentu-2 on `Aug 31st 2021`.
 
 The following is a short summary of the upgrade steps:
     1. Stopping the running CertiK v1.4.x instance 
@@ -61,7 +61,7 @@ For some resources that is similar with Cosmos Hub upgrade:
 1. [Chain Upgrade Module – upgrade automation](https://figment.network/resources/cosmos-stargate-upgrade-overview/#upgrade)
 1. [Keyring Migration Guide](https://docs.cosmos.network/master/migrations/keyring.html)
 
-If you want to test the procedure before the update happens on `TBD`, please see this post accordingly:
+If you want to test the procedure before the update happens on `4313500`, please see this post accordingly:
 
 https://github.com/cosmos/gaia/issues/569#issuecomment-767910963
 
@@ -142,10 +142,10 @@ The version/commit hash of certik v1.4.0: `331ac5bffc0f8bc3769ff7125f51b871cce58
    ```
 
 1. Make sure your chain halts at the right block height:
-    `TBD`
+    `4313500`
 
     ```bash
-    perl -i -pe 's/^halt-height =.*/halt-height = TBD/' ~/.certikd/config/app.toml
+    perl -i -pe 's/^halt-height =.*/halt-height = 4313500/' ~/.certikd/config/app.toml
     ```
 
  1. After the chain has halted, make a backup of your `.certikd` directory
@@ -165,7 +165,7 @@ The version/commit hash of certik v1.4.0: `331ac5bffc0f8bc3769ff7125f51b871cce58
    Since we know the last block generated in shentu-1, we now export the state.
 
    ```bash
-   $ certikd export --height=<height TBD> > shentu-1-genesis-exported.json
+   $ certikd export --height=4313500 > shentu-1-genesis-exported.json
    ```
    _this might take a while, you can expect up to 30 minutes for this step_
 
@@ -204,7 +204,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
 1. Migrate exported state from the current v1.4.0 version to the new v2.0.0 version <b>WITH THE v2.0.0 BINARY</b>:
 
    ```bash
-   $ certik migrate shentu-1-genesis-exported.json --chain-id=shentu-2 --initial-height 0 > genesis.json
+   $ certik migrate shentu-1-genesis-exported.json --chain-id=shentu-2 --initial-height 4313501 > genesis.json
    ```
 
    This will migrate our exported state into the required `genesis.json` file to start the node in shentu-2.
@@ -300,7 +300,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
    **NOTE**: It is recommended for validators and node operators to take a full data snapshot at the export
    height before proceeding in case the upgrade does not go as planned or if not enough voting power
    comes online in a sufficient and agreed upon amount of time. That means the backup of `.certikd` should 
-   only take place once the chain has halted at height `height TBD`.
+   only take place once the chain has halted at height `4313500`.
    In such a case, the chain will fallback
    to continue operating `shentu-1`. See [Recovery](#recovery) for details on how to proceed.
 
