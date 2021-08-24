@@ -153,7 +153,18 @@ The version/commit hash of certik v1.4.0: `331ac5bffc0f8bc3769ff7125f51b871cce58
     perl -i -pe 's/^halt-height =.*/halt-height = 4313500/' ~/.certikd/config/app.toml
     ```
 
- 1. After the chain has halted, make a backup of your `.certikd` directory
+1. After the chain has halted, export existing state from `shentu-1`:
+
+   Before exporting state via the following command, the `certikd` binary must be stopped!
+   Since we know the last block generated in shentu-1, we now export the state.
+
+   ```bash
+   $ certikd export --height=4313500 > shentu-1-genesis-exported.json
+   ```
+   _this might take a while, you can expect up to 30 minutes for this step_
+
+
+1. make a backup of your `.certikd` directory
 
     ```bash
     mv ~/.certikd ./certikd_backup
@@ -163,16 +174,6 @@ The version/commit hash of certik v1.4.0: `331ac5bffc0f8bc3769ff7125f51b871cce58
    height before proceeding in case the upgrade does not go as planned or if not enough voting power
    comes online in a sufficient and agreed upon amount of time. In such a case, the chain will fallback
    to continue operating `shentu-1`. See [Recovery](#recovery) for details on how to proceed.
-
-1. Export existing state from `shentu-1`:
-
-   Before exporting state via the following command, the `certikd` binary must be stopped!
-   Since we know the last block generated in shentu-1, we now export the state.
-
-   ```bash
-   $ certikd export --height=4313500 > shentu-1-genesis-exported.json
-   ```
-   _this might take a while, you can expect up to 30 minutes for this step_
 
 1. Verify the SHA256 of the (sorted) exported genesis file:
 
