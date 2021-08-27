@@ -21,7 +21,7 @@ This indicates that the upgrade procedure should be performed on `Aug 31st 2021`
  
 # Summary
 
-The shentu-1 will undergo a scheduled upgrade at block `4313500`, which corresponds approximately to `Tuesday Aug 31, 2021 at 15:00 UTC` at the current block time (~5.4s/block). Note that the proposed date/time is approximate as blocks are not generated at a constant interval.
+The shentu-1 will undergo a scheduled upgrade at block `4313500`, which corresponds approximately to `Tuesday Aug 31, 2021 at 23:30 UTC` at the current block time (~6.1s/block). Note that the proposed date/time is approximate as blocks are not generated at a constant interval.
 
 - West Coast USA: `16:30 on Aug 31`
 - East Coast USA: `19:30 on Aug 31`
