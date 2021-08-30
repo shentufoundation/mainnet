@@ -210,7 +210,7 @@ Cross check your genesis hash with other peers (other validators) in the chat ro
 1. Migrate exported state from the current v1.4.0 version to the new v2.0.0 version <b>WITH THE v2.0.0 BINARY</b>:
 
    ```bash
-   $ certik migrate shentu-1-genesis-exported.json --chain-id=shentu-2 --initial-height 4313501 > genesis.json
+   $ certik migrate shentu-1-genesis-exported.json --chain-id=shentu-2 --initial-height <export_height+1> > genesis.json
    ```
 
    This will migrate our exported state into the required `genesis.json` file to start the node in shentu-2.
