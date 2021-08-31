@@ -1,7 +1,16 @@
 <b> Hash of the exported genesis from shentu-1: 3f28ecb8602d1bc5cb64ae58c2f34dc78522d0fe731275c613a08ae40a3ba157 </b>
 
+```bash
+jq -S -c -M '' shentu-1-genesis-exported.json| shasum -a 256 
+3f28ecb8602d1bc5cb64ae58c2f34dc78522d0fe731275c613a08ae40a3ba157  -
+```
+
 <b> Hash of final genesis for shentu-2: 04172c30d9a1f3979af007bceaa1bf3e044e41b845ed6e424a9ed3fb90b1805d </b>
 
+```bash
+jq -S -c -M '' genesis.json| shasum -a 256 
+04172c30d9a1f3979af007bceaa1bf3e044e41b845ed6e424a9ed3fb90b1805d  -
+```
 
 # How to join Shentu-2 Mainnet
 
