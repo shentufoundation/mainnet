@@ -1,7 +1,3 @@
-<b> Hash of the exported genesis from shentu-1: TBD </b>
-
-<b> Hash of final genesis for shentu-2: TBD </b>
-
 # How to join Shentu-2 Mainnet
 
 ## Recommended system setup
@@ -152,3 +148,7 @@ You can start the service like this:
 	sudo systemctl enable certik
 	sudo systemctl start certik
 
+## Hashes
+Hash of the exported genesis from shentu-1: TBD
+
+Hash of final genesis for shentu-2: TBD
