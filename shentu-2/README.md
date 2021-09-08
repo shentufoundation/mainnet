@@ -22,10 +22,6 @@ Certified TIA-942 Tier 3 or higher
 - Disk: 256GB+ 
 - Ubuntu 18.04 +
 
-## Node Migration Guidelines
-
-For validators or node runners looking to upgrade their node from shentu-1 to shentu-2, visit [CertiK Chain Shentu-2 Migration Guidelines](https://github.com/certikfoundation/mainnet/blob/main/shentu-2/migration.md).
-
 ## Setup Guidelines POST Shentu-2 LAUNCH (Aug/31/2021)
 
 (Optional - create directory)
@@ -162,7 +158,7 @@ You can start the service like this:
 	sudo systemctl enable certik
 	sudo systemctl start certik
 
-## Hashes
-Hash of the exported genesis from shentu-1: TBD
+## State-sync using Snapshots from Public RPC
 
-Hash of final genesis for shentu-2: TBD
+
+Please refer to [state-sync.md](https://github.com/certikfoundation/mainnet/blob/main/shentu-2/state-sync.md)
