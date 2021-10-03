@@ -57,3 +57,20 @@ This is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a 
     sudo systemctl start certik
     ```
     
+ #### Note
+
+When building a new validator make sure to use --chain-id shentu-2.2 
+
+example:
+```
+certik tx staking create-validator \
+--amount <your-amount-to-stake>uctk \
+--commission-max-change-rate 0.01 \
+--commission-max-rate 0.2 \
+--commission-rate 0.1 \
+--from <your-wallet-name> \
+--min-self-delegation 1 \
+--moniker <your-moniker> \
+--pubkey $(certik tendermint show-validator) \
+--chain-id shentu-2.2
+```
