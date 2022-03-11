@@ -4,7 +4,7 @@
 
  1. Download state_sync.sh
     ```
-    wget -O https://github.com/xellos00/mainnet/tree/main/shentu-2.2/statesync/state_sync.sh
+    wget -O state_sync.sh https://raw.githubusercontent.com/xellos00/mainnet/main/shentu-2.2/statesync/state_sync.sh
     ```
  2. Please, Update RPC_ADDR if you want to start your node with different RPC Node. 
 
