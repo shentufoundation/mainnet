@@ -62,7 +62,7 @@ This is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a 
 ## Frequently used commands
 1. Unjail validator
  ```
- /bin/certik tx slashing unjail --from <Walletname> --chain-id shentu-2.2 
+ certik tx slashing unjail --from <Walletname> --chain-id shentu-2.2 
  ```
 2. Redeem commission rewards
  ```
