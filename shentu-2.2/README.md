@@ -59,3 +59,12 @@ This is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a 
     sudo systemctl start certik
     ```
     
+## Frequently used commands
+1. Unjail validator
+ ```
+ certik tx slashing unjail --from <Walletname> --chain-id shentu-2.2 
+ ```
+2. Redeem commission rewards
+ ```
+ certik tx distribution withdraw-rewards <Operator Address> --from <Walletname> --commission  --chain-id=shentu-2.2 --fees 10000uctk
+ ```
