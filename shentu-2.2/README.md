@@ -1,5 +1,7 @@
 # Shentu-2.2
 
+## There is a planned upgrade on shentu-2.2 network at height 6334000. For details regarding the upgrade please refer to the [upgrade instructions](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/upgrade.md)
+
 This is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
 ## Validators should download the [v2.2.0 binary](https://github.com/certikfoundation/shentu/releases/tag/v2.2.0)
@@ -74,3 +76,13 @@ certik tx staking create-validator \
 --pubkey $(certik tendermint show-validator) \
 --chain-id shentu-2.2
 ```
+
+## Frequently used commands
+1. Unjail validator
+ ```
+ certik tx slashing unjail --from <Walletname> --chain-id shentu-2.2 
+ ```
+2. Redeem commission rewards
+ ```
+ certik tx distribution withdraw-rewards <Operator Address> --from <Walletname> --commission  --chain-id=shentu-2.2 --fees 10000uctk
+ ```
