@@ -16,7 +16,7 @@ To automate your upgrade process, you can use [cosmovisor](https://docs.cosmos.n
 
 # Shentu-v231 Upgrade
 
-There is a planned upgrade on shentu-2.3 network at height 6530000, which approximately correspond to `Feb 02, 2022 16:00 UTC`. The upgrade is a simple binary swap at any height before the upgrade:
+There is a planned upgrade on shentu-2.2 network at height 6530000, which approximately correspond to `Feb 02, 2022 16:00 UTC`. The upgrade is a simple binary swap at any height before the upgrade:
 
  1. Stop the binary at any height before 6530000.
  2. Replace the binary with the v2.3.1 version.
@@ -25,3 +25,19 @@ There is a planned upgrade on shentu-2.3 network at height 6530000, which approx
 Make sure you do <b>NOT</b> perform `certik unsafe-reset-all` or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.3.1.
+
+# Shield-V2 Upgrade
+
+There is a planned upgrade on shentu-2.2 network at height 8705500, which approximately correspond to `July 07, 2022 06:00 UCT`. The upgrade is a simple binary swap <b>at the upgrade height.</b>
+
+ 1. Upgrade height is reached
+ 2. Stop the running certik daemon
+ 3. Replace the running binary (either v2.3.2 or v2.3.1) to v2.4.0 binary
+ 4. Start the daemon with the new binary
+
+Or you could use cosmovisor. Shentu-V2 upgrade will support audo-download of the binaries for linux-amd64 binaries.
+However, we strongly encourage the node operators to stand by during the upgrade time to ensure the node can be upgrade in a timely manner.
+
+Make sure you do <b>NOT</b> perform `certik unsafe-reset-all` or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.4.0.
