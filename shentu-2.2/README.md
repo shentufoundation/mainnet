@@ -1,10 +1,10 @@
 # Shentu-2.2
 
-## There is a planned upgrade on shentu-2.2 network at height 6334000. For details regarding the upgrade please refer to the [upgrade instructions](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/upgrade.md) (COMPLETE)
+## There are past/planned upgrades for shentu-2.2 networks. To make sure you're up-to-date on the on-chain software upgrades, check [upgrade instructions](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/upgrades)
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## Validators should download the [v2.3.1 binary](https://github.com/ShentuChain/shentu/releases/tag/v2.3.1)
+## The latest binary version is v2.3.1, which will be used until height 8705500.
 
 ## To quickly join the network through state sync snapshot, visit [state sync snapshot guide](https://github.com/ShentuChain/mainnet/edit/main/shentu-2.2/statesync)
 
