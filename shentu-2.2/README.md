@@ -31,7 +31,7 @@
     example :
     ```bash
     
-    seeds = "b3192e1ab0cbb9f439b15c82605379018d96b4f2@3.209.12.186:26656,23419a3d9deedabce1a3cbfa0d1a3e55ef2364a7@34.229.203.57:26656"
+    seeds = "b3192e1ab0cbb9f439b15c82605379018d96b4f2@3.209.12.186:26656,23419a3d9deedabce1a3cbfa0d1a3e55ef2364a7@34.229.203.57:26656,207c47bed435e4174844064ef3f51ca35b059de2@shentu-seed.panthea.eu:26656"
     ```
  6. Start certik daemon.
  
