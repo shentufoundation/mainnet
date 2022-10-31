@@ -4,7 +4,7 @@
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## The latest binary version is v2.3.1, which will be used until height 8705500.
+## The latest binary version is v2.4.0, which will be used until height 10485430.
 
 ## To quickly join the network through state sync snapshot, visit [state sync snapshot guide](https://github.com/ShentuChain/mainnet/edit/main/shentu-2.2/statesync)
 
@@ -27,18 +27,17 @@
     certik unsafe-reset-all
     ```
  5. Add the seed nodes in `config/config.toml`.
-    
+
     example :
     ```bash
-    
     seeds = "b3192e1ab0cbb9f439b15c82605379018d96b4f2@3.209.12.186:26656,23419a3d9deedabce1a3cbfa0d1a3e55ef2364a7@34.229.203.57:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
     ```
  6. Start certik daemon.
- 
+
  7. (Optional) Run CertiK daemon as a system service
- 
+
     save the following content as `certik.service` under `/etc/systemd/system/`
- 
+
     ```
     [Unit]
     Description=CertiK Daemon
@@ -54,16 +53,16 @@
     WantedBy=multi-user.target
     ```
     remember to replace the `User` to your corresponding username.
-    
+
  8. Enable and start certik system service.
     ```bash
     sudo systemctl enable certik
     sudo systemctl start certik
     ```
-    
+
  #### Note
 
-When building a new validator make sure to use --chain-id shentu-2.2 
+When building a new validator make sure to use --chain-id shentu-2.2
 
 example:
 ```
@@ -82,7 +81,7 @@ certik tx staking create-validator \
 ## Frequently used commands
 1. Unjail validator
  ```
- certik tx slashing unjail --from <Walletname> --chain-id shentu-2.2 
+ certik tx slashing unjail --from <Walletname> --chain-id shentu-2.2
  ```
 2. Redeem commission rewards
  ```
