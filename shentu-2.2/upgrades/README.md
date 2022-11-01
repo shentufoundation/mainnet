@@ -49,7 +49,7 @@ There is a planned upgrade on shentu-2.2 network at height 10485430, which appro
  1. Upgrade height is reached
  2. Stop the running certik daemon
  3. Replace the running binary with the v2.6.0 version. The binary is renamed to shentud since v2.6.0.
- 4. Rename home directory from .certik to .shentud
+ 4. Update the home directory (default directory changed from ~/.certik to ~/.shentud)
  5. Start the shentud daemon with the new binary
 
 Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
