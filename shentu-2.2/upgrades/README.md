@@ -54,6 +54,6 @@ There is a planned upgrade on shentu-2.2 network at height 10485430, which appro
 
 Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
-Using cosmovisor is not recommended for this upgrade, because it is unnecessarily complicated due to the rename from certik to shentud. To make it work, you need to wait for the halt of the certik binary, then set everything up with shentud before you start cosmovusor.
+<b>Cosmovisor might not be able to find the expected binary or home directory due to the rename from certik to shentud. To make it work, you need to wait for the halt of the certik binary, then set everything up with shentud before you start cosmovisor.</b>
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.6.0.
