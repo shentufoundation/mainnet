@@ -42,7 +42,7 @@ Make sure you do <b>NOT</b> perform `certik unsafe-reset-all` or delete the data
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.4.0.
 
-# Shentu-V260 Upgrade
+# v2.6.0 Upgrade
 
 There is a planned upgrade on shentu-2.2 network at height 10485430, which approximately correspond to `Nov 09, 2022 06:00 UCT`. The upgrade is a simple binary swap <b>at the upgrade height.</b> and rename of home directory from .certik to .shentud.
 
@@ -54,6 +54,13 @@ There is a planned upgrade on shentu-2.2 network at height 10485430, which appro
 
 Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
-<b>Cosmovisor might not be able to find the expected binary or home directory due to the rename from certik to shentud. To make it work, you need to wait for the halt of the certik binary, then set everything up with shentud before you start cosmovisor.</b>
+<b>Cosmovisor might not be able to find the expected binary or home directory due to the rename from certik to shentud. To make it work, you need to wait for the halt of the certik binary, then set everything up with shentud before you start cosmovisor.</b> Here are some (probably not all) of the things you need to do.
+
+ 1. Upgrade height is reached
+ 2. Stop the running certik daemon
+ 3. <b>Update the home directory (default directory changed from ~/.certik to ~/.shentud)</b>
+ 4. Set up cosmovisor directory under ~/.shentud home directory
+ 5. Set environment variables with shentud binary and ~/.shentud home directory
+ 6. Start cosmovisor
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.6.0.
