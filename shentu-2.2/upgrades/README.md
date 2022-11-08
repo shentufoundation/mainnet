@@ -44,13 +44,15 @@ You can find the release notes and built binaries here: https://github.com/Shent
 
 # v2.6.0 Upgrade
 
-There is a planned upgrade on shentu-2.2 network at height 10485430, which approximately correspond to `Nov 09, 2022 06:00 UCT`. The upgrade is a simple binary swap <b>at the upgrade height.</b> and rename of home directory from .certik to .shentud.
+There is a planned upgrade on shentu-2.2 network at height 10485430, which approximately correspond to `Nov 09, 2022 06:00 UCT`. Here are what you need to do.
 
  1. Upgrade height is reached
  2. Stop the running certik daemon
  3. Replace the running binary with the v2.6.0 version. The binary is renamed to shentud since v2.6.0.
  4. <b>Update the home directory (default directory changed from ~/.certik to ~/.shentud)</b>
- 5. Start the shentud daemon with the new binary
+ 5. Add additional config entries. [add_config_entries_v260](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/add_config_entries_v260) contains diff files that show the additional entries added in app.toml and config.toml, also contains the script for your reference to add these entries.
+ 6. Set up shentud system service
+ 7. Start the shentud daemon with the new binary
 
 Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
