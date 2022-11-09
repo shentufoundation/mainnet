@@ -48,9 +48,9 @@ There is a planned upgrade on shentu-2.2 network at height 10485430, which appro
 
  1. Upgrade height is reached
  2. Stop the running certik daemon
- 3. Replace the running binary with the v2.6.0 version. The binary is renamed to shentud since v2.6.0.
+ 3. Replace the running binary with the v2.6.0 version. The binary is renamed to shentud since v2.6.0
  4. <b>Update the home directory (default directory changed from ~/.certik to ~/.shentud)</b>
- 5. Add additional config entries. [add_config_entries_v260](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/add_config_entries_v260) contains diff files that show the additional entries added in app.toml and config.toml, also contains the script for your reference to add these entries.
+ 5. Add additional config entries. [add_config_entries_v260](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/add_config_entries_v260) contains diff files that show the additional entries added in app.toml and config.toml. If you want the upgrade to use iavl-fastnode (will impro ve performance) add iavl-disable-fastnode = false in app.toml under [base] before re-starting the node (it'll take several hours) 
  6. Set up shentud system service
  7. Start the shentud daemon with the new binary
 
