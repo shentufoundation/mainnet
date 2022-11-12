@@ -4,27 +4,29 @@
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## The latest binary version is v2.4.0, which will be used until height 10485430.
+## The latest binary version is v2.6.0
 
 ## To quickly join the network through state sync snapshot, visit [state sync snapshot guide](https://github.com/ShentuChain/mainnet/edit/main/shentu-2.2/statesync)
 
 ### How to Join Shentu-2.2 Mainnet
 
+# 
+
  1. Download the new genesis.
     ```bash
-    wget https://raw.githubusercontent.com/certikfoundation/mainnet/main/shentu-2.2/genesis.json .
+    wget https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json.
     ```
- 2. Place the genesis under `.certik/config`
+ 2. Place the genesis under `.shentud/config`
     ```bash
-    mv genesis.json ~/.certik/config/genesis.json
+    mv genesis.json ~/.shentud/config/genesis.json
     ```
  3. (Optional) Back up the old chain state.
     ```bash
-    mv ~/.certik/data ~/.certik/data_old
+    mv ~/.shentud/data ~/.shentud/data_old
     ```
  4. Reset the chain state.
     ```bash
-    certik unsafe-reset-all
+    shentud unsafe-reset-all
     ```
  5. Add the seed nodes in `config/config.toml`.
 
@@ -32,20 +34,20 @@
     ```bash
     seeds = "b3192e1ab0cbb9f439b15c82605379018d96b4f2@3.209.12.186:26656,23419a3d9deedabce1a3cbfa0d1a3e55ef2364a7@34.229.203.57:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
     ```
- 6. Start certik daemon.
+ 6. Start shentud daemon.
 
- 7. (Optional) Run CertiK daemon as a system service
+ 7. (Optional) Run Shentud daemon as a system service
 
-    save the following content as `certik.service` under `/etc/systemd/system/`
+    save the following content as `shentud.service` under `/etc/systemd/system/`
 
     ```
     [Unit]
-    Description=CertiK Daemon
+    Description=Shentud Daemon
     After=network-online.target
 
     [Service]
     User=ubuntu
-    ExecStart=/home/ubuntu/certik start --home /home/ubuntu/.certik
+    ExecStart=/home/ubuntu/shentud start --home /home/ubuntu/.shentud
     Restart=always
     RestartSec=3
     LimitNOFILE=4096
@@ -54,10 +56,10 @@
     ```
     remember to replace the `User` to your corresponding username.
 
- 8. Enable and start certik system service.
+ 8. Enable and start shentud system service.
     ```bash
-    sudo systemctl enable certik
-    sudo systemctl start certik
+    sudo systemctl enable shentud
+    sudo systemctl start shentud
     ```
 
  #### Note
@@ -66,7 +68,7 @@ When building a new validator make sure to use --chain-id shentu-2.2
 
 example:
 ```
-certik tx staking create-validator \
+shentud tx staking create-validator \
 --amount <your-amount-to-stake>uctk \
 --commission-max-change-rate 0.01 \
 --commission-max-rate 0.2 \
@@ -74,7 +76,7 @@ certik tx staking create-validator \
 --from <your-wallet-name> \
 --min-self-delegation 1 \
 --moniker <your-moniker> \
---pubkey $(certik tendermint show-validator) \
+--pubkey $(shentud tendermint show-validator) \
 --chain-id shentu-2.2
 ```
 
