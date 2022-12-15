@@ -26,13 +26,13 @@
     ```
  4. Reset the chain state.
     ```bash
-    shentud unsafe-reset-all
+    shentud tendermint unsafe-reset-all
     ```
  5. Add the seed nodes in `config/config.toml`.
 
     example :
     ```bash
-    seeds = "b3192e1ab0cbb9f439b15c82605379018d96b4f2@3.209.12.186:26656,23419a3d9deedabce1a3cbfa0d1a3e55ef2364a7@34.229.203.57:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
+    seeds = "bc9bbcae77a09b41417f597965f6fcbb8b280892@52.71.99.85,fd2944af442b18dab4ce50d8e001816a38490d56@54.158.108.97,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
     ```
  6. Start shentud daemon.
 
@@ -55,6 +55,7 @@
     WantedBy=multi-user.target
     ```
     remember to replace the `User` to your corresponding username.
+    remember to replace the `ExecStart` to your corresponding path.
 
  8. Enable and start shentud system service.
     ```bash
