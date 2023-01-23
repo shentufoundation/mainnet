@@ -65,7 +65,9 @@
 
  #### Note
 
-When building a new validator make sure to use --chain-id shentu-2.2
+When building a new validator make sure to use --chain-id shentu-2.2.
+
+Keep in mind that the minimum staked amount is 1 CTK this is 1000000uctk
 
 example:
 ```
@@ -78,7 +80,8 @@ shentud tx staking create-validator \
 --min-self-delegation 1 \
 --moniker <your-moniker> \
 --pubkey $(shentud tendermint show-validator) \
---chain-id shentu-2.2
+--chain-id shentu-2.2 \
+--fees 5000uctk
 ```
 
 ## Frequently used commands
