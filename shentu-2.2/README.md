@@ -65,6 +65,16 @@
 
  #### Note
 
+Before start being able to start your validator you must have your wallet linked or a new one created. 
+You can see the options here:
+```
+shentud keys help
+```
+You can create the wallet through shentud now:
+```
+shentud keys add <your-wallet-name>
+```
+
 When building a new validator make sure to use --chain-id shentu-2.2.
 
 Keep in mind that the minimum staked amount is 1 CTK this is 1000000uctk
