@@ -14,7 +14,7 @@
 
  1. Download the new genesis.
     ```bash
-    wget https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json.
+    wget https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json
     ```
  2. Place the genesis under `.shentud/config`
     ```bash
