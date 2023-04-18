@@ -66,3 +66,16 @@ Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud tendermi
  6. Start cosmovisor
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.6.0.
+
+# v2.7.0 upgrade
+
+There is a planned upgrade on shentu-2.2 network at height 12926000, which is approximately at `April 26, 2023, 0am-1am UTC`. Here are what you need to do:
+
+ 1. Upgrade height is reached
+ 2. Stop the running shentud daemon
+ 3. Replace the running binary with the v2.7.0 version
+ 4. Restart the shentud daemon with the new binary
+
+ Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/download/v2.7.0/shentud_2.7.0_linux_amd64
