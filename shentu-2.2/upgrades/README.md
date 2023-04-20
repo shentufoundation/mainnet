@@ -69,7 +69,7 @@ You can find the release notes and built binaries here: https://github.com/Shent
 
 # v2.7.0 upgrade
 
-There is a planned upgrade on shentu-2.2 network at height 12926000, which is approximately at `April 26, 2023, 0am-1am UTC`. Here are what you need to do:
+An upgrade is planned for the Shentu mainnet at height `12926000`, which is estimated to be reached around **0am-1am UTC on April 26, 2023**. Here are what you need to do:
 
  1. Upgrade height is reached
  2. Stop the running shentud daemon
