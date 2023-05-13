@@ -4,7 +4,7 @@ A Cross-chain Protocol with Security Scoring and Decentralized Reimbursements fo
 
 Latest network is [shentu-2.2](https://github.com/shentufoundation/mainnet/tree/main/shentu-2.2)
 
-## CertiK community
+## Shentu community
 
 [Website](https://www.shentu.technology/)
 
