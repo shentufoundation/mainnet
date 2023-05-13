@@ -4,7 +4,7 @@ A Cross-chain Protocol with Security Scoring and Decentralized Reimbursements fo
 
 Latest network is [shentu-2.2](https://github.com/certikfoundation/mainnet/tree/main/shentu-2.2)
 
-## CertiK community
+## Shentu community
 
 [Website](https://www.certik.foundation/)
 
@@ -16,4 +16,4 @@ Latest network is [shentu-2.2](https://github.com/certikfoundation/mainnet/tree/
 
 ## Latest Data Files
 
-All relevant instructions & guides to join Shentu is located [under shentu-2.2 directory](https://github.com/certikfoundation/mainnet/tree/main/shentu-2.2)
+All relevant instructions & guides to join Shentu is located [under shentu-2.2 directory](https://github.com/shentufoundation/mainnet/tree/main/shentu-2.2)
