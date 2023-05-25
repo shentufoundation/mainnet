@@ -78,7 +78,7 @@ An upgrade is planned for the Shentu mainnet at height `12926000`, which is esti
 
  Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
- You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/download/v2.7.0/shentud_2.7.0_linux_amd64
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.0
  
  # v2.7.1 upgrade
 
@@ -90,4 +90,4 @@ Here are what you need to do:
 
  Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
- You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/download/v2.7.1/shentud_2.7.1_linux_amd64
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.1
