@@ -4,7 +4,7 @@
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## The latest binary version is v2.6.0
+## The latest binary version is [v2.7.1](https://github.com/shentufoundation/shentu/releases/tag/v2.7.1)
 
 ## To quickly join the network through state sync snapshot, visit [state sync snapshot guide](https://github.com/ShentuChain/mainnet/edit/main/shentu-2.2/statesync)
 
@@ -14,7 +14,7 @@
 
  1. Download the new genesis.
     ```bash
-    wget https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json.
+    wget https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json
     ```
  2. Place the genesis under `.shentud/config`
     ```bash
