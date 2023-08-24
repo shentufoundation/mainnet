@@ -37,3 +37,8 @@ The bech32 address prefix for Shentu Chain is being updated to "shentu" for cons
     - Method: POST
     - Params: List of addresses
     - Swagger UI: http://44.214.37.77:8081/swagger/index.html#/default/post_shentu_v1_bech32_converts
+
+## Contacts us
+
+- Discord:  https://discord.gg/FVuWccdmk5
+- Telegram: https://t.me/shentu_chain
