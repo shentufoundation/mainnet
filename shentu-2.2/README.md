@@ -4,7 +4,7 @@
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## The latest binary version is [v2.7.1](https://github.com/shentufoundation/shentu/releases/tag/v2.7.1)
+## The latest binary version is [v2.7.2](https://github.com/shentufoundation/shentu/releases/tag/v2.7.2)
 
 ## To quickly join the network through state sync snapshot, visit [state sync snapshot guide](https://github.com/ShentuChain/mainnet/edit/main/shentu-2.2/statesync)
 
@@ -32,9 +32,13 @@
     ```bash
     seeds = "bc9bbcae77a09b41417f597965f6fcbb8b280892@52.71.99.85:26656,fd2944af442b18dab4ce50d8e001816a38490d56@54.158.108.97:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
     ```
- 6. Start shentud daemon.
-
- 7. (Optional) Run Shentud daemon as a system service
+ 6. Download the snapshot.
+    ```bash
+    wget https://d35kzm6d1vecp9.cloudfront.net/shentu.tar.gz
+    ```
+ 7. Unzip/Unpack the snapshot into your .shentud directory.
+ 8. Start `shentud` daemon.
+ 9. (Optional) Run Shentud daemon as a system service
 
     save the following content as `shentud.service` under `/etc/systemd/system/`
 
@@ -55,11 +59,15 @@
     remember to replace the `User` to your corresponding username.
     remember to replace the `ExecStart` to your corresponding path.
 
- 8. Enable and start shentud system service.
-    ```bash
-    sudo systemctl enable shentud
-    sudo systemctl start shentud
-    ```
+ 10. Enable and start shentud system service.
+     ```bash
+     sudo systemctl enable shentud
+     sudo systemctl start shentud
+     ```
+ 11. Check the shentud log.
+     ```bash
+     journalctl -n 20 -u shentud -f
+     ```
 
  #### Note
 
