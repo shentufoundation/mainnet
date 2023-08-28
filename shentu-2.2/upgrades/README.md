@@ -91,3 +91,16 @@ Here are what you need to do:
  Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
  You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.1
+
+# v2.7.2 upgrade
+
+An upgrade is planned for the Shentu mainnet at height `14875800`, which is estimated to be reached around **Sep 06, 2023 13:30-14:30 UTC**. Or you could get the upgrade time by visiting https://www.mintscan.io/shentu/blocks/14875800. Here are what you need to do:
+
+ 1. Wait until upgrade height is reached
+ 2. Stop the running shentud daemon
+ 3. Replace the running binary with the v2.7.2 version
+ 4. Restart the shentud daemon with the new binary
+
+ Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.2
