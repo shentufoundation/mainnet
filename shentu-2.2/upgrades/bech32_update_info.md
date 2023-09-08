@@ -36,7 +36,19 @@ The bech32 address prefix for Shentu Chain is being updated to "shentu" for cons
     - URL: http://44.214.37.77:8081/shentu/v1/bech32/converts
     - Method: POST
     - Params: List of addresses
-    - Swagger UI: http://44.214.37.77:8081/swagger/index.html#/default/post_shentu_v1_bech32_converts
+    - Swagger UI: 
+      - http://44.214.37.77:8081/swagger/index.html#/default/post_shentu_v1_bech32_converts
+    - Curl Demo:
+      - ```bash
+        curl --location 'http://44.214.37.77:8081/shentu/v1/bech32/converts' \
+          --header 'Content-Type: application/json' \
+          --data '[
+        "certik10tl0fx2mue9y5vhrecjr6ys36dz744rpgp59hr",
+        "certik1zexrzljmu3sups2fhw8j6w85ykksu8jvejzt2f"
+        ]'
+
+- Web to get the new address
+  - URL: http://44.214.37.77:8082
 
 ## Contacts us
 
