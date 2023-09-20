@@ -48,7 +48,7 @@ The bech32 address prefix for Shentu Chain is being updated to "shentu" for cons
         ]'
 
 - Web to get the new address
-  - URL: http://44.214.37.77:8082
+  - URL:  https://explorer.shentu.technology/addressconversion?net=shentu-2.2
 
 ## Contacts us
 
