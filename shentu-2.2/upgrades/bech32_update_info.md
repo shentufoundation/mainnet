@@ -30,6 +30,8 @@ The bech32 address prefix for Shentu Chain is being updated to "shentu" for cons
 - On some DApps, like Keplr and Cosmostation, users may need to manually update their settings to use the new prefix format.
 
 ## Tool for mapping old/new address
+- Web to get the new address
+    - URL:  https://explorer.shentu.technology/addressconversion?net=shentu-2.2
 
 - API to get the new address
 
@@ -46,9 +48,6 @@ The bech32 address prefix for Shentu Chain is being updated to "shentu" for cons
         "certik10tl0fx2mue9y5vhrecjr6ys36dz744rpgp59hr",
         "certik1zexrzljmu3sups2fhw8j6w85ykksu8jvejzt2f"
         ]'
-
-- Web to get the new address
-  - URL:  https://explorer.shentu.technology/addressconversion?net=shentu-2.2
 
 ## Contacts us
 
