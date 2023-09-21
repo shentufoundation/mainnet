@@ -3,7 +3,7 @@
 ### Estimated distribution time
 - September 27, 2023, 13:00 UTC
 
-### Distribution rewards through DeepWallet
-- Login [DeepWallet](https://wallet.shentu.technology/login).
-- Switch to **portfolio** page.
-- Click the **distribution** button to get rewards.
+### Loyalty Gratitude Distribution
+1. Login [DeepWallet](https://wallet.shentu.technology/login).
+2. Switch to **portfolio** page.
+3. Click the **Loyalty Gratitude Distribution** button to get rewards.
