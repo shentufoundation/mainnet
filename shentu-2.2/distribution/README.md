@@ -1,7 +1,7 @@
 
 
 ### Estimated distribution time
-- September 27, 2023, 13:00 UTC
+- September 28, 2023, 13:00 UTC
 
 ### Loyalty Gratitude Distribution
 1. Login [DeepWallet](https://wallet.shentu.technology/login).
