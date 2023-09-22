@@ -44,15 +44,17 @@ You can find the release notes and built binaries here: https://github.com/Shent
 
 # v2.6.0 Upgrade
 
-There is a planned upgrade on shentu-2.2 network at height 10485430, which approximately correspond to `Nov 09, 2022 06:00 UCT`. The upgrade is a simple binary swap <b>at the upgrade height.</b> and rename of home directory from .certik to .shentud.
+There is a planned upgrade on shentu-2.2 network at height 10485430, which approximately correspond to `Nov 09, 2022 06:00 UCT`. Here are what you need to do.
 
  1. Upgrade height is reached
  2. Stop the running certik daemon
- 3. Replace the running binary with the v2.6.0 version. The binary is renamed to shentud since v2.6.0.
+ 3. Replace the running binary with the v2.6.0 version. The binary is renamed to shentud since v2.6.0
  4. <b>Update the home directory (default directory changed from ~/.certik to ~/.shentud)</b>
- 5. Start the shentud daemon with the new binary
+ 5. Add additional config entries. [add_config_entries_v260](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/add_config_entries_v260) contains diff files that show the additional entries added in app.toml and config.toml. If you want the upgrade to use iavl-fastnode (will impro ve performance) add iavl-disable-fastnode = false in app.toml under [base] before re-starting the node (it might take several hours) 
+ 6. Set up shentud system service
+ 7. Start the shentud daemon with the new binary
 
-Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
 <b>Cosmovisor might not be able to find the expected binary or home directory due to the rename from certik to shentud. To make it work, you need to wait for the halt of the certik binary, then set everything up with shentud before you start cosmovisor.</b> Here are some (probably not all) of the things you need to do.
 
@@ -64,3 +66,54 @@ Make sure you do <b>NOT</b> perform `certik unsafe-reset-all`, `shentud unsafe-r
  6. Start cosmovisor
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.6.0.
+
+# v2.7.0 upgrade
+
+An upgrade is planned for the Shentu mainnet at height `12926000`, which is estimated to be reached around **0am-1am UTC on April 26, 2023**. Here are what you need to do:
+
+ 1. Upgrade height is reached
+ 2. Stop the running shentud daemon
+ 3. Replace the running binary with the v2.7.0 version
+ 4. Restart the shentud daemon with the new binary
+
+ Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.0
+ 
+ # v2.7.1 upgrade
+
+Here are what you need to do:
+
+ 1. Stop the running shentud daemon
+ 2. Replace the running binary with the v2.7.1 version
+ 3. Restart the shentud daemon with the new binary
+
+ Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.1
+
+# v2.7.2 upgrade
+
+An upgrade is planned for the Shentu mainnet at height `14875800`, which is estimated to be reached around **Sep 06, 2023 13:30-14:30 UTC**. Or you could get the upgrade time by visiting https://www.mintscan.io/shentu/blocks/14875800. Here are what you need to do:
+
+ 1. Wait until upgrade height is reached
+ 2. Stop the running shentud daemon
+ 3. Replace the running binary with the v2.7.2 version
+ 4. Restart the shentud daemon with the new binary
+
+ Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+ You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.7.2
+
+# v2.8.0 upgrade
+
+Here are what you need to do:
+
+1. Wait until upgrade height is reached
+2. Stop the running shentud daemon
+3. Replace the running binary with the v2.8.0 version
+4. Restart the shentud daemon with the new binary
+
+Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.8.0

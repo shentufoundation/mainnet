@@ -10,6 +10,6 @@
 
  3. Reset your chain-data and start with a following command   
    ```
-   $ certik unsafe-reset-all
+   $ shentud tendermint unsafe-reset-all
    $ bash state_sync.sh
    ```  

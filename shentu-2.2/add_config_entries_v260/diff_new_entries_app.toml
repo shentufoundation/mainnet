@@ -1,0 +1,13 @@
+15c15
+< # everything: all saved states will be deleted, storing only the current state; pruning at 10 block intervals
+---
+> # everything: all saved states will be deleted, storing only the current and previous state; pruning at 10 block intervals
+61a62,69
+> 
+> # IavlCacheSize set the size of the iavl tree cache. 
+> # Default cache size is 50mb.
+> iavl-cache-size = 781250
+> 
+> # IAVLDisableFastNode enables or disables the fast node feature of IAVL. 
+> # Default is true.
+> iavl-disable-fastnode = false

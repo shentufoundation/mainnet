@@ -1,0 +1,13 @@
+[Unit]
+Description=Shentud Daemon
+After=network-online.target
+
+[Service]
+User=ubuntu
+ExecStart=/opt/chain/shentud start --home /opt/chain/.shentud
+Restart=always
+RestartSec=3
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
