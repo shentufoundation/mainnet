@@ -1,4 +1,4 @@
-# Shentu Loyalty Gratitude Distribution
+# Shentu Loyalty Gratitude Program
 
 # Overview
 
