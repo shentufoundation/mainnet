@@ -4,7 +4,7 @@
 
 * This proposal aims to recognize and reward the valuable contributions of the Shentu Chain community and its loyal users. Their unwavering support has been instrumental in the growth and success of our blockchain platform. In line with our commitment to fostering a thriving ecosystem, we propose the implementation of the Shentu Loyalty Gratitude Distribution program.
 
-# Distribution - FAQ
+# Program - FAQ
 
 ## Who can receive distribution?
 
