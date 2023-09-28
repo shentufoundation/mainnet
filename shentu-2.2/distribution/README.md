@@ -10,14 +10,14 @@
 
 - Before Shentu v2.8.0 upgrade (before block height 15094300), those whose account full assets (Balance,Staked-Delegated,Staked-Unbonding,Rewards) is greater than 1CTK can receive 10CTK.
 
-## When does distribution start and end?
+## When does the program start and end?
 
 - Start: September 28th, 2023
 - End: October 31st, 2023
 
 ## How to receive distribution?
 
-The rewards will be distributed through **DeepWallet**, a trusted and secure platform of Shentu Chain. Detailed instructions and guidelines for claiming the rewards:
+The gratitude will be distributed through **DeepWallet**, a trusted and secure platform of Shentu Chain. Detailed instructions and guidelines for claiming:
 
 1. Login to [DeepWallet](https://wallet.shentu.technology/login)
 2. Import Shentu account if it wasn’t imported
