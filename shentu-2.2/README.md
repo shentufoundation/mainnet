@@ -4,7 +4,7 @@
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## Latest version download [address](https://github.com/shentufoundation/shentu/releases)
+## Latest version download [link](https://github.com/shentufoundation/shentu/releases)
 
 ### How to Join Shentu-2.2 Mainnet with snapshot
 
