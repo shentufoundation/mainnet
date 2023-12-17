@@ -4,13 +4,9 @@
 
 ## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
 
-## The latest binary version is [v2.8.0](https://github.com/shentufoundation/shentu/releases/tag/v2.8.0)
+## Latest version download [address](https://github.com/shentufoundation/shentu/releases)
 
-## To quickly join the network through state sync snapshot, visit [state sync snapshot guide](https://github.com/ShentuChain/mainnet/edit/main/shentu-2.2/statesync)
-
-### How to Join Shentu-2.2 Mainnet
-
-# 
+### How to Join Shentu-2.2 Mainnet with snapshot
 
  1. Download the new genesis.
     ```bash
