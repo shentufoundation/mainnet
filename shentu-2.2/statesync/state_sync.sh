@@ -4,7 +4,6 @@ set -ux
 set -e
 set -v
 
-# Given address is DSRV RPC Node Address.
 RPC_ADDR="44.203.246.233:26657"
 INTERVAL=1500
 
