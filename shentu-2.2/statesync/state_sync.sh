@@ -5,7 +5,7 @@ set -e
 set -v
 
 # Given address is DSRV RPC Node Address.
-RPC_ADDR="165.232.72.33:26657"
+RPC_ADDR="44.203.246.233:26657"
 INTERVAL=1500
 
 LATEST_HEIGHT=$(curl -s $RPC_ADDR/block | jq -r .result.block.header.height);
