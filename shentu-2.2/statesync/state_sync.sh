@@ -4,7 +4,7 @@ set -ux
 set -e
 set -v
 
-RPC_ADDR="44.203.246.233:26657"
+RPC_ADDR="https://shenturpc.noopsbycertik.com"
 INTERVAL=1500
 
 LATEST_HEIGHT=$(curl -s $RPC_ADDR/block | jq -r .result.block.header.height);
