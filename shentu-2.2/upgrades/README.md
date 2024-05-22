@@ -137,7 +137,7 @@ Here are what you need to do:
 
 1. Wait until upgrade height is reached
 2. Stop the running shentud daemon
-3. Replace the running binary with the v2.9.0 version
+3. Replace the running binary with the v2.10.0 version
 4. Restart the shentud daemon with the new binary
 
 Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
