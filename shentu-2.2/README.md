@@ -26,7 +26,7 @@
     ```
  5. Add the seed nodes in `config/config.toml`.
     ```bash
-    seeds = "867a2986f28575b1fde864136862fde465cac17c@47.253.197.230:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
+    seeds = "867a2986f28575b1fde864136862fde465cac17c@47.253.209.134:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
     ```
  6. Download the snapshot.
     ```bash
