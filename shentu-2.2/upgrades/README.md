@@ -161,7 +161,7 @@ You can find the release notes and built binaries here: https://github.com/shent
 
 # v2.12.0 upgrade
 
-An upgrade is planned for the Shentu mainnet at height `20949300`, which is estimated to be reached around 12:30am UTC on Oct 30, 2024.
+An upgrade is planned for the Shentu mainnet at height `20949300`, which is estimated to be reached around 12:30PM UTC on Oct 30, 2024.
 
 Here are what you need to do:
 
