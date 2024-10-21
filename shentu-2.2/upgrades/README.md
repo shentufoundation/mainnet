@@ -158,3 +158,19 @@ Here are what you need to do:
 Make sure you do <b>NOT</b> perform `shentud tendermint unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
 You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.11.0
+
+# v2.12.0 upgrade
+
+An upgrade is planned for the Shentu mainnet at height `20949300`, which is estimated to be reached around 10am UTC on Oct 23, 2024.
+
+Here are what you need to do:
+
+1. Wait until upgrade height is reached
+2. Stop the running shentud daemon
+3. Replace the running binary with the v2.12.0 version
+4. Restart the shentud daemon with the new binary
+
+Make sure you do <b>NOT</b> perform `shentud comet unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
+
+You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.12.0
+
