@@ -1,4 +1,4 @@
-# Shentu-v230 Upgrade
+# v2.3.0 upgrade
 
 There is a planned upgrade on shentu-2.2 network at height 6334000, which approximately correspond to `Jan 20, 2022 00:30 UTC`. The upgrade is a simple binary swap:
 
@@ -14,7 +14,7 @@ You can find the release notes and built binaries here: ~~https://github.com/She
 
 To automate your upgrade process, you can use [cosmovisor](https://docs.cosmos.network/master/run-node/cosmovisor.html). However, we encourage monitoring the process during the time of the actual upgrade to ensure the node upgrades in a timely manner.
 
-# Shentu-v231 Upgrade
+# v2.3.1 upgrade
 
 There is a planned upgrade on shentu-2.2 network at height 6530000, which approximately correspond to `Feb 02, 2022 16:00 UTC`. The upgrade is a simple binary swap at any height before the upgrade:
 
@@ -26,7 +26,7 @@ Make sure you do <b>NOT</b> perform `certik unsafe-reset-all` or delete the data
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.3.1.
 
-# Shield-V2 Upgrade
+# v2.4.0 upgrade
 
 There is a planned upgrade on shentu-2.2 network at height 8705500, which approximately correspond to `July 07, 2022 06:00 UCT`. The upgrade is a simple binary swap <b>at the upgrade height.</b>
 
@@ -42,7 +42,7 @@ Make sure you do <b>NOT</b> perform `certik unsafe-reset-all` or delete the data
 
 You can find the release notes and built binaries here: https://github.com/ShentuChain/shentu/releases/tag/v2.4.0.
 
-# v2.6.0 Upgrade
+# v2.6.0 upgrade
 
 There is a planned upgrade on shentu-2.2 network at height 10485430, which approximately correspond to `Nov 09, 2022 06:00 UCT`. Here are what you need to do.
 
