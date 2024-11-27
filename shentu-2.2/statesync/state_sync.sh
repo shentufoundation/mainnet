@@ -5,7 +5,7 @@ set -e
 set -v
 
 RPC_ADDR="https://rpc.shentu.org"
-INTERVAL=1500
+INTERVAL=1000
 
 LATEST_HEIGHT=$(curl -s $RPC_ADDR/block | jq -r .result.block.header.height);
 BLOCK_HEIGHT=$(($LATEST_HEIGHT-$INTERVAL))

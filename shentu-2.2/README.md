@@ -8,33 +8,32 @@
 
 ### How to Join Shentu-2.2 Mainnet with snapshot
 
- 1. Download the new genesis.
+ 1. (Optional) Init shentud
     ```bash
-    wget https://raw.githubusercontent.com/ShentuChain/mainnet/main/shentu-2.2/genesis.json
+    shentud init <moniker> --chain-id shentu-2.2 --home <your path>
     ```
- 2. Place the genesis under `.shentud/config`
+ 2. (Optional) Back up the old chain state.
     ```bash
-    mv genesis.json ~/.shentud/config/genesis.json
+    mv <your path>/.shentud/data <your path>/.shentud/data_old
     ```
- 3. (Optional) Back up the old chain state.
+ 3. Reset the chain state.
     ```bash
-    mv ~/.shentud/data ~/.shentud/data_old
+    shentud tendermint unsafe-reset-all --home <your path> --keep-addr-book
     ```
- 4. Reset the chain state.
-    ```bash
-    shentud tendermint unsafe-reset-all
-    ```
- 5. Add the seed nodes in `config/config.toml`.
+ 4. Add the seed nodes in `config/config.toml`.
     ```bash
     seeds = "867a2986f28575b1fde864136862fde465cac17c@47.253.209.134:26656,3edd4e16b791218b623f883d04f8aa5c3ff2cca6@shentu-seed.panthea.eu:36656"
     ```
- 6. Download the snapshot.
+ 5. Download the snapshot.
     ```bash
-    wget https://d35kzm6d1vecp9.cloudfront.net/shentu.tar.gz
+    wget https://snapshot-light.shentu.org/shentu.tar.gz
     ```
- 7. Unzip/Unpack the snapshot into your .shentud directory.
- 8. Start `shentud` daemon.
- 9. (Optional) Run Shentud daemon as a system service
+ 6. Unzip/Unpack the snapshot into <<your path>> .shentud directory.
+ 7. Start `shentud` daemon.
+    ```bash
+    shentud start --home <your path>
+    ```
+ 8. (Optional) Run Shentud daemon as a system service
 
     save the following content as `shentud.service` under `/etc/systemd/system/`
 
@@ -55,12 +54,12 @@
     remember to replace the `User` to your corresponding username.
     remember to replace the `ExecStart` to your corresponding path.
 
- 10. Enable and start shentud system service.
+ 9. Enable and start shentud system service.
      ```bash
      sudo systemctl enable shentud
      sudo systemctl start shentud
      ```
- 11. Check the shentud log.
+ 10. Check the shentud log.
      ```bash
      journalctl -n 20 -u shentud -f
      ```
