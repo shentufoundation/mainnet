@@ -44,7 +44,7 @@
 
     [Service]
     User=ubuntu
-    ExecStart=/home/ubuntu/shentud start --home /home/ubuntu/.shentud
+    ExecStart=<your path>/shentud start --home <your path>/.shentud
     Restart=always
     RestartSec=3
     LimitNOFILE=4096
