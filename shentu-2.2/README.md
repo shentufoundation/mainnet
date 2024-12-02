@@ -28,7 +28,7 @@
     ```bash
     wget https://snapshot-light.shentu.org/shentu.tar.gz
     ```
- 6. Unzip/Unpack the snapshot into <<your path>> .shentud directory.
+ 6. Unzip/Unpack the snapshot into \<your path\>/.shentud directory.
  7. Start `shentud` daemon.
     ```bash
     shentud start --home <your path>
