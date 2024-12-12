@@ -7,7 +7,7 @@ A validator can be run on a VPS or Dedicated server/VM
 
 Machine Configuration:
 ```
-4 physical core CPU
+8 physical core CPU
 Memory: 16GB+
 Disk: SSD - 300GB+
 ```
