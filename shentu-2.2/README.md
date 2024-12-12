@@ -5,10 +5,12 @@
 ## Pre-Requisites
 A validator can be run on a VPS or Dedicated server/VM
 
-Minimum requirements:
+Machine Configuration:
+```
 4 physical core CPU
 Memory: 16GB+
 Disk: SSD - 300GB+
+```
 
 ## Latest version download [link](https://github.com/shentufoundation/shentu/releases)
 
