@@ -2,7 +2,13 @@
 
 ## There are past/planned upgrades for shentu-2.2 networks. To make sure you're up-to-date on the on-chain software upgrades, check [upgrade instructions](https://github.com/ShentuChain/mainnet/blob/main/shentu-2.2/upgrades)
 
-## This network is a direct chain fork from `shentu-2.1` to `shentu-2.2` network without a binary upgrade.
+## Pre-Requisites
+A validator can be run on a VPS or Dedicated server/VM
+
+Minimum requirements:
+4 physical core CPU
+Memory: 16GB+
+Disk: SSD - 300GB+
 
 ## Latest version download [link](https://github.com/shentufoundation/shentu/releases)
 
