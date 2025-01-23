@@ -193,7 +193,7 @@ You can find the release notes and built binaries here: https://github.com/shent
 
 # v2.14.0 upgrade
 
-The upgrade at height [22399700](https://www.mintscan.io/shentu/block/22399700), expected around `Feb 6th, 2025 13:00 UTC`. 
+The upgrade height is [22399700](https://www.mintscan.io/shentu/block/22399700), which is approx. `February 6th 2024, 13:00 UTC`.
 
 Here are what you need to do:
 
