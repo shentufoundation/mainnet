@@ -189,3 +189,17 @@ Here are what you need to do:
 Make sure you do <b>NOT</b> perform `shentud comet unsafe-reset-all`, or delete the data directory, as it will require you to sync from the beginning of shentu-2.2 network. The above steps are sufficient to perform this upgrade.
 
 You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.13.0
+
+
+# v2.14.0 upgrade
+
+The upgrade at height [22399700](https://www.mintscan.io/shentu/block/22399700), expected around `Feb 6th, 2025 13:00 UTC`. 
+
+Here are what you need to do:
+
+1. Wait until upgrade height `22399700` is reached
+2. Stop the running shentud daemon
+3. Replace the running binary with the v2.13.0 version
+4. Restart the shentud daemon with the new binary
+
+You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.14.0
