@@ -1,4 +1,4 @@
-# v2.18.9 upgrade
+# v2.18.0 upgrade
 
 The upgrade is scheduled at block height [29,367,500](https://www.mintscan.io/shentu/block/29367500), approximately on `May 19th 2026, 13:00UTC`.
 
