@@ -1,3 +1,16 @@
+# v2.19.0 upgrade
+
+The upgrade is scheduled at block height [29,367,500](https://www.mintscan.io/shentu/block/31150500), approximately on `September 15th 2026, 13:00UTC`.
+
+### Here are what you need to do:
+
+1. Wait until upgrade height `31,150,500` is reached
+2. Stop the running shentud daemon
+3. Replace the running shentud binary with the v2.19.0 version
+4. Restart the shentud daemon with the v2.19.0 version
+
+You can find the release notes and built binaries here: https://github.com/shentufoundation/shentu/releases/tag/v2.19.0
+
 # v2.18.0 upgrade
 
 The upgrade is scheduled at block height [29,367,500](https://www.mintscan.io/shentu/block/29367500), approximately on `May 19th 2026, 13:00UTC`.
