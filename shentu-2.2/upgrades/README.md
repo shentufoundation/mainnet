@@ -1,6 +1,6 @@
 # v2.19.0 upgrade
 
-The upgrade is scheduled at block height [29,367,500](https://www.mintscan.io/shentu/block/31150500), approximately on `September 15th 2026, 13:00UTC`.
+The upgrade is scheduled at block height [31,150,500](https://www.mintscan.io/shentu/block/31150500), approximately on `September 15th 2026, 13:00UTC`.
 
 ### Here are what you need to do:
 
