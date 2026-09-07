@@ -7,6 +7,10 @@ v2.18.1 rebuilds `shentud` as a **static-PIE** binary per an upstream security a
 
 ```bash
 wget https://snapshot-light.shentu.org/shentud_2.18.1_linux_amd64
+```
+
+check sha256sum
+```
 sha256sum shentud_2.18.1_linux_amd64
 # must be: 43f743366419d769d20497bdd3f484de330e36e07f2d54cdfd8cbfc4826fe602
 ```
